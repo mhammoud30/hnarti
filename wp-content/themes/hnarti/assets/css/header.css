@@ -1,0 +1,166 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles (mobile-first) */
+body {
+    font-family: 'TW_Cen_MT', sans-serif;
+}
+
+.site-header {
+    background-color: #FFF4E3;
+    border-bottom: 1px solid #e0d0c0;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    max-width: 100%;
+}
+
+.site-branding {
+    margin-bottom: 15px;
+}
+
+.custom-logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.custom-logo-link img {
+    max-height: 10vh;
+    width: auto;
+}
+
+.navigation {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #7f1010;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.search-toggle {
+    margin-right: 15px;
+}
+
+.search-toggle img {
+    width: 20px;
+    height: 20px;
+}
+
+.language-selector select {
+    background-color: transparent;
+    border: none;
+    color: #7f1010;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'TW_Cen_MT', sans-serif;
+    margin-left: 30px;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+
+    .site-branding {
+        margin-bottom: 0;
+    }
+
+    .navigation {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+    }
+
+    .nav-menu li {
+        margin: 0 15px;
+    }
+
+    .header-actions {
+        width: auto;
+        
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+        height: 80px;
+    }
+
+    .custom-logo-link img {
+        max-height: 15vh;
+    }
+
+    .navigation {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    #left-navigation {
+        justify-content: flex-end;
+        padding-right: 40px;
+    }
+
+    #right-navigation {
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+
+    .nav-menu {
+        height: 100%;
+    }
+
+    .nav-menu li {
+        margin: 0 30px;
+    }
+
+    .nav-menu a {
+        font-size: 18px;
+    }
+
+    .language-selector select {
+        font-size: 18px;
+    }
+}
