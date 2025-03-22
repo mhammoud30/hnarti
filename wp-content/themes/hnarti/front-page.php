@@ -27,9 +27,7 @@
                 Armenian heritage, particularly Western Armenian, through
                 diverse social, artistic and cultural projects and events.
             </p>
-            <div>
-            <button class="intro-button">Our Story</button>
-            </div>
+            <button href="#" class="intro-button">Our Story</button>
         </div>
     </section>
 

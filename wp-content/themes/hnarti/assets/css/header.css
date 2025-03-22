@@ -110,7 +110,7 @@ body {
     }
 
     .nav-menu li {
-        margin: 0 20px;
+        margin: 0 15px;
     }
 
     .header-actions {
@@ -153,12 +153,11 @@ body {
     }
 
     .nav-menu li {
-        margin: 0 20px;
+        margin: 0 30px;
     }
 
     .nav-menu a {
         font-size: 18px;
-        letter-spacing: 1px;
     }
 
     .language-selector select {
