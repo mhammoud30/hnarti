@@ -79,3 +79,14 @@ function enqueue_custom_font() {
     wp_enqueue_style('custom-font', get_template_directory_uri() . '/fonts/font-style.css');
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_font');
+
+function enqueue_compass_script() {
+    wp_enqueue_script(
+        'compass-script',
+        get_template_directory_uri() . '/assets/js/compass.js',
+        array('jquery'), // Add jQuery as a dependency if you're using it
+        '1.0.0',
+        true // Load in footer for better performance
+    );
+}
+add_action('wp_enqueue_scripts', 'enqueue_compass_script');

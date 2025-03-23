@@ -33,6 +33,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 .hero-content {
     position: relative;
     display: flex;
@@ -42,7 +43,8 @@
     text-align: center;
     z-index: 1;
     height: 100vh;
-    padding-top: 15vh; /* Adjust this value to move content up or down */
+    padding-top: 15vh;
+    /* Adjust this value to move content up or down */
 }
 
 .hero-title {
@@ -50,7 +52,8 @@
     font-size: 35px;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 37vh; /* Increased space between title and slogan */
+    margin-bottom: 37vh;
+    /* Increased space between title and slogan */
     max-width: 100%;
 }
 
@@ -60,7 +63,8 @@
     align-items: center;
     font-size: 44px;
     font-weight: bold;
-    margin-bottom: 11vh; /* Adjust space between slogan and button */
+    margin-bottom: 11vh;
+    /* Adjust space between slogan and button */
 }
 
 .hero-slogan span {
@@ -132,20 +136,21 @@
 }
 
 @media (max-width: 1080px) {
-   
+
 
     .hero-slogan {
-        
+
         margin-bottom: 15vh;
     }
 
-    
+
 }
 
 /* Intro Section Styles */
 .intro-section {
-    background-color: #FFF4E3; /* Light pink background */
-    padding: 60px 0;
+    background-color: #FFF4E3;
+    /* Light pink background */
+    padding: 1% 0;
     text-align: center;
 }
 
@@ -159,9 +164,10 @@
     font-size: 38px;
     font-weight: bold;
     line-height: 1.6;
-    color: #730E3E; /* Dark red color */
+    color: #730E3E;
+    /* Dark red color */
     margin-bottom: 30px;
-    
+
 }
 
 .intro-button {
@@ -212,20 +218,35 @@
 
 /* Purpose Section Styles */
 .purpose-section {
-    padding: 10px 0;
     display: flex;
-   
-    align-items: center;
+    flex-direction: row; 
+    justify-content: space-between;  /* or space-around/center, etc. */
+    align-items: center;            /* ensures vertical alignment */
     min-height: 100vh;
     background-color: #FFF4E3;
-}
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
 .purpose-container {
-    width: 45%; /* Adjusted width to allow space for both containers */
+    width: 100%;
     max-width: 500px;
-    padding: 0 15px;
-    margin-left: 5%;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+/* On larger screens */
+@media (min-width: 992px) {
+  .purpose-container {
+    width: 45%;  /* left side */
+    margin: 0 2%;
+  }
+  .compass-container {
+    width: 45%;  /* right side */
+    margin: 0 2%;
+  }
+}
+
 .purpose-content {
     background-color: #FBDEEB;
     border-radius: 10px;
@@ -236,21 +257,15 @@
     overflow: visible;
 }
 
-.purpose-text {
+.purpose-text,
+.purpose-p {
     font-size: 29px;
     font-family: "Kalam", sans-serif;
     font-weight: bold;
     text-align: center;
     color: #EC2083;
-}
-
-.purpose-p {
-    color: #EC2083;
-    font-size: 29px;
     line-height: 1.6;
-    margin-bottom: 20px;
 }
-
 
 .purpose-content::after {
     content: '';
@@ -259,13 +274,12 @@
     right: 40px;
     width: 90px;
     height: 90px;
-    background-image: url('../images/center.png');
+    background-image: url('../images/Asset-5@2x.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
     transform: rotate(15deg);
 }
-
 
 .purpose-button {
     background-color: #FFFFFF;
@@ -275,80 +289,71 @@
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 10px;
-    display: inline-block;
-    position: relative;
     border: 2px solid #EC2083;
+    position: relative;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .purpose-button::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     background-color: #EC2083;
     z-index: -1;
     border-radius: 10px;
-    transform: translateY(5px) translateX(5px);
+    transform: translate(5px, 5px);
 }
 
-
+/* Updated Compass Container CSS */
 .compass-container {
     position: relative;
-    width: 45%; /* Adjusted width to allow space for both containers */
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    height: 0;
+    padding-bottom: 100%; /* Creates a responsive square */
+    overflow: visible;
 }
-.compass-bg {
-    height: 600px;
-    margin-top: -300px;
-    margin-left: 25%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.compass-hand {
-    height: 400px;
-    margin-left: 70%;
-    margin-top: -28%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.compass-center {
-   margin-left: 68%;
-   margin-top: -2%;
-   height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.compass-bg, .compass-hand, .compass-center {
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-}
-.compass-hand {
-    animation: rotate 20s linear infinite;
-}
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
+
+@media (min-width: 992px) {
+    .compass-container {
+        width: 45%;
+        padding-bottom: 45%;
+        margin: 0 2.5%;
     }
 }
 
-@media (max-width: 768px) {
-    .purpose-section {
-        flex-direction: column;
-    }
-    
-    .purpose-container,
-    .compass-container {
-        width: 100%;
-        margin-bottom: 30px;
-    }
+/* Simplified base styles for all compass elements */
+.compass-bg, .compass-hand, .compass-center {
+    position: absolute;
+    /* Remove specific transform properties - will be handled by JS */
 }
+
+.compass-bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.compass-hand {
+    /* Size relative to container */
+    height: 75%;
+    z-index: 2;
+    /* Don't set position - JS will handle this */
+}
+
+.compass-center {
+    /* Size relative to container */
+    width: 15%;
+    height: auto;
+    z-index: 3;
+    /* Don't set position - JS will handle this */
+}
+
 
 /* What We're Up To Section Styles */
 .what-were-up-to {
@@ -382,10 +387,11 @@
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
+    box-shadow: 8px 8px 0 #318EE7;  /* Add this line for the shadow effect */
 }
 
 .wwut-image-button::before {
-    content: '';
+    content: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -446,7 +452,46 @@
     }
 }
 
-/* ... (previous styles remain unchanged) ... */
+/* ===== FOLLOW ALONG SECTION STYLES ===== */
+.follow-along {
+    background-color: #FFF4E3; /* main background color */
+    padding: 40px 20px;
+    text-align: center;
+    color: #730E3E; /* text color */
+  }
+  
+  .follow-along h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #730E3E; /* heading color */
+  }
+
+  .follow-along .instagram-grid {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .follow-along .instagram-grid a {
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    display: inline-block;
+  }
+
+  .follow-along .instagram-grid a:hover {
+    transform: scale(1.03);
+  }
+
+  .follow-along .instagram-grid img {
+    max-width: 180px; 
+    height: auto;
+    border-radius: 6px;
+    display: block;
+  }
+
+
+
 
 /* Let's Connect Section Styles */
 .lets-connect {
@@ -523,12 +568,12 @@
 
 .left-icon {
     margin-top: -13%;
-    left: 20px;
+    left: 50px;
 }
 
 .right-icon {
     margin-top: -13%;
-    right: 20px;
+    right: 50px;
 }
 
 @media (max-width: 768px) {
@@ -551,12 +596,16 @@
 }
 
 
-
 /* Footer Styles */
 .site-footer {
-    background-color: #D6E8FC;
-    padding: 20px 0;
+    position: relative;
     font-family: 'TW_Cen_MT', sans-serif;
+}
+
+.footer-top {
+    background-color: #FFF4E3; /* Light cream color */
+    padding: 20px 0;
+    position: relative;
 }
 
 .footer-container {
@@ -569,90 +618,130 @@
 }
 
 .footer-logo img {
-    height: 300px;
-    
+    height: 140px;
 }
 
 .footer-content {
     flex-grow: 1;
-    text-align: center;
+    max-width: 750px;
+    margin-left: 50px;
 }
 
 .footer-title {
     font-size: 32px;
     font-weight: bold;
-    color: #318EE7;
-    margin-bottom: 10px;
-    margin-left: -5%;
+    color: #6b2a68; /* Dark purple color */
+    margin-bottom: 8px;
 }
 
 .footer-subtitle {
-    font-size: 18px;
-    color: #318EE7;
+    font-size: 16px;
+    color: #6b2a68;
     margin-bottom: 20px;
-    margin-left: 16%;
 }
 
 .footer-form {
     display: flex;
-    justify-content: center;
     gap: 10px;
-    margin-bottom: 15px;
 }
 
 .footer-form input[type="text"],
 .footer-form input[type="email"] {
-    padding: 8px 12px;
-    border: 1px solid #318EE7;
+    padding: 12px 15px;
+    border: 1px solid #e6e6e6;
     border-radius: 5px;
-    font-size: 18px;
-    width: 200px;
-    background-color: #ACCDF6;
-    color: #318EE7;
-    
+    font-size: 16px;
+    flex: 1;
+    background-color: #FFF4E3;
 }
-
-.footer-form input[type="text"]::placeholder,
-.footer-form input[type="email"]::placeholder {
-    color: #318EE7;
-}
-
 
 .footer-form button {
-    background-color: #318EE7;
+    background-color: #4d90db; /* Blue */
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 12px 25px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.footer-links {
-    font-size: 13px;
-    color: #318EE7;
-    margin-bottom: 5px;
-    display: flex;
-    flex-direction: row;
+/* Emblem positioned on the right side of top section */
+.footer-emblem {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-145%);
 }
 
-.footer-links p {
-    color: #318EE7;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-copyright {
-    font-size: 12px;
-    color: #318EE7;
-}
-
-.footer-image img {
-    height: 120px;
+.footer-emblem img {
+    height: 140px;
     width: auto;
-    margin-bottom: -5%;
-    margin-left: 85%;
+}
+
+.footer-bottom {
+    background-color: #e6d5b8; /* Darker cream color */
+    padding: 60px 0;
+    position: relative;
+}
+
+.footer-links {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    color: #6b2a68;
+    font-size: 14px;
+}
+
+.footer-policies {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-policies a {
+    color: #6b2a68;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-to-top {
+    position: absolute;
+    right: 5%;
+    top: 75%;
+    transform: translateY(-20%);
+}
+
+.back-to-top a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.back-to-top img {
+    width: 40px;
+    height: 40px;
+}
+
+.back-to-top a:hover {
+    background-color: #6b2a68;
+}
+
+@media (max-width: 1024px) {
+    .footer-emblem {
+        right: 2%;
+    }
     
+    .footer-emblem img {
+        height: 120px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -661,8 +750,12 @@
         text-align: center;
     }
 
-    .footer-logo, .footer-image {
+    .footer-logo {
         margin-bottom: 20px;
+    }
+    
+    .footer-content {
+        margin-left: 0;
     }
 
     .footer-form {
@@ -671,11 +764,40 @@
     }
 
     .footer-form input[type="text"],
-    .footer-form input[type="email"],
-    .footer-form button {
+    .footer-form input[type="email"] {
         width: 100%;
-        max-width: 300px;
         margin-bottom: 10px;
-        background-color: #D5E2FA;
+    }
+    
+    .footer-emblem {
+        position: static;
+        transform: none;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+    
+    .footer-emblem img {
+        height: 100px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .footer-policies {
+        justify-content: center;
+    }
+    
+    .back-to-top {
+        position: static;
+        transform: none;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+    
+    .back-to-top a {
+        margin: 0 auto;
     }
 }
