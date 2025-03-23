@@ -1,0 +1,117 @@
+/* Custom Template CSS */
+
+/* Hnarti Welcome Section */
+.hnarti-welcome-section {
+    background-color: #e5d6bc;
+    padding: 40px 20px 80px;
+    width: 100%;
+}
+
+.hnarti-welcome-container {
+    max-width: 75vw;
+    margin: 0 auto;
+    position: relative;
+    border: 3px solid #EB2082;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #FFF4E3;
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.1);
+
+}
+
+.hnarti-logo {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+}
+
+.hnarti-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.hnarti-welcome-content {
+    text-align: center;
+    padding: 10px 40px;
+}
+
+.hnarti-greeting {
+    font-family: 'Kalam', sans-serif;
+    color: #EB2082;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hnarti-intro, 
+.hnarti-mission, 
+.hnarti-call-to-action {
+    font-family: 'Tw Cen MT', sans-serif;
+    color: #333;
+    font-size: 32px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hnarti-intro strong,
+.hnarti-mission strong {
+    font-weight: bold;
+}
+
+.hnarti-call-to-action {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hnarti-welcome-container {
+        padding: 20px;
+    }
+    
+    .hnarti-logo {
+        width: 80px;
+        height: 80px;
+        top: -20px;
+        right: -20px;
+    }
+    
+    .hnarti-greeting {
+        font-size: 28px;
+    }
+    
+    .hnarti-intro, 
+    .hnarti-mission, 
+    .hnarti-call-to-action {
+        font-size: 16px;
+    }
+    
+    .hnarti-call-to-action {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hnarti-welcome-container {
+        padding: 15px;
+    }
+    
+    .hnarti-logo {
+        width: 60px;
+        height: 60px;
+        top: -15px;
+        right: -15px;
+    }
+    
+    .hnarti-welcome-content {
+        padding: 10px 15px;
+    }
+    
+    .hnarti-greeting {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}

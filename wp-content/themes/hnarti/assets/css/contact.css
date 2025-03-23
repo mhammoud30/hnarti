@@ -1,0 +1,106 @@
+/* Contact Section Styles */
+.contact-section {
+    background-color: #FFF4E3; /* Cream/beige background color */
+    padding: 60px 0;
+    font-family: 'Tw Cen MT', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    color: #730E3E;
+    font-size: 55px;
+    margin-bottom: 30px;
+    font-weight: 700;
+
+}
+
+.contact-intro {
+    color: #730E3E; /* Matching color for intro text */
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-of-type {
+    text-align: left; /* Aligns the button to the left */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #E0D3C8; /* Light border color */
+    border-radius: 30px;
+    background-color: #FFF4E3;
+    font-size: 22px;
+    color: #730E3E;
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #730E3E;
+    opacity: 0.7;
+}
+
+.contact-form textarea {
+    height: 140px;
+    resize: vertical;
+    border-radius: 20px;
+}
+
+.submit-btn {
+    background-color: #318de6; /* Blue button color as shown in image */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 40px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3A7BC8; /* Slightly darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section h1 {
+        font-size: 36px;
+    }
+    
+    .contact-intro {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section h1 {
+        font-size: 30px;
+    }
+    
+    .contact-intro {
+        font-size: 16px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px 15px;
+    }
+}
