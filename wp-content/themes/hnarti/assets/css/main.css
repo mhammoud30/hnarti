@@ -451,24 +451,54 @@
         margin-bottom: 30px;
     }
 }
-
 /* ===== FOLLOW ALONG SECTION STYLES ===== */
 .follow-along {
-    background-color: #FFF4E3; /* main background color */
-    padding: 40px 20px;
+    background: linear-gradient(to bottom, 
+                  #e5d6bc 0%, 
+                  #e5d6bc 70%, 
+                  #FFF4E3 70%, 
+                  #FFF4E3 100%); /* Half darker beige, half lighter beige */  /* Warm beige background like in your reference */
+    padding: 60px 20px;
     text-align: center;
-    color: #730E3E; /* text color */
+  }
+  
+  .follow-along .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .follow-along h2 {
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #730E3E; /* heading color */
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #730E3E; /* Deep burgundy color from your palette */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
-
+  
+  .follow-along .handle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #730E3E;
+    font-size: 1.2rem;
+  }
+  
+  .follow-along .handle i {
+    margin: 0 10px;
+    font-size: 1.4rem;
+  }
+  
+  .follow-along .handle a {
+    color: #730E3E;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
   .follow-along .instagram-grid {
     display: flex;
-    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
   }
@@ -477,19 +507,54 @@
     text-decoration: none;
     transition: transform 0.2s ease;
     display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
   }
-
+  
   .follow-along .instagram-grid a:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
   }
-
+  
   .follow-along .instagram-grid img {
-    max-width: 180px; 
-    height: auto;
-    border-radius: 6px;
-    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-
+  
+  .follow-along .instagram-grid .insta-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .follow-along .instagram-grid .insta-overlay i {
+    color: #000;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 768px) {
+    .follow-along h2 {
+      font-size: 2rem;
+    }
+    
+    .follow-along .instagram-grid {
+      gap: 15px;
+    }
+    
+    .follow-along .instagram-grid a {
+      width: 150px;
+      height: 150px;
+    }
+  }
 
 
 
@@ -679,7 +744,7 @@
 }
 
 .footer-bottom {
-    background-color: #e6d5b8; /* Darker cream color */
+    background-color: #e5d6bc; /* Darker cream color */
     padding: 60px 0;
     position: relative;
 }
