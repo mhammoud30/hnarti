@@ -45,8 +45,8 @@
     margin-bottom: 30px;
 }
 
-.hnarti-intro, 
-.hnarti-mission, 
+.hnarti-intro,
+.hnarti-mission,
 .hnarti-call-to-action {
     font-family: 'Tw Cen MT', sans-serif;
     color: #333;
@@ -71,24 +71,24 @@
     .hnarti-welcome-container {
         padding: 20px;
     }
-    
+
     .hnarti-logo {
         width: 80px;
         height: 80px;
         top: -20px;
         right: -20px;
     }
-    
+
     .hnarti-greeting {
         font-size: 28px;
     }
-    
-    .hnarti-intro, 
-    .hnarti-mission, 
+
+    .hnarti-intro,
+    .hnarti-mission,
     .hnarti-call-to-action {
         font-size: 16px;
     }
-    
+
     .hnarti-call-to-action {
         font-size: 18px;
     }
@@ -98,20 +98,523 @@
     .hnarti-welcome-container {
         padding: 15px;
     }
-    
+
     .hnarti-logo {
         width: 60px;
         height: 60px;
         top: -15px;
         right: -15px;
     }
-    
+
     .hnarti-welcome-content {
         padding: 10px 15px;
     }
-    
+
     .hnarti-greeting {
         font-size: 24px;
         margin-bottom: 20px;
     }
 }
+
+
+
+
+/*  ####################################################
+            Hnarti Meaning Section CSS
+####################################################  */
+.hnarti-meaning-section {
+    background-color: #FFF4E3;
+    padding: 60px 20px 80px;
+    width: 100%;
+}
+
+.hnarti-meaning-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Tw Cen MT', sans-serif;
+}
+
+.meaning-title {
+    color: #5E0231;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Tw Cen MT', sans-serif;
+}
+
+.meaning-question {
+    font-size: 27px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.meaning-logo-container {
+    margin: 0 auto 30px;
+    max-width: 500px;
+}
+
+.meaning-logo {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.meaning-explanation {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.meaning-explanation:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 25%;
+    right: 25%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.meaning-explanation:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    right: 25%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.meaning-part {
+    padding: 0 20px;
+}
+
+.meaning-label {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #000;
+    font-weight: bold;
+}
+
+.meaning-core-vision {
+    font-size: 27px;
+    line-height: 1.6;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.meaning-deeper {
+    font-size: 27px;
+    line-height: 1.6;
+    margin: 50px auto 30px;
+}
+
+.meaning-hnar {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #000;
+}
+
+.meaning-words {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.meaning-word {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 27px;
+    border: 1px solid;
+}
+
+.meaning-word.blue {
+    border-color: #318DE6;
+    color: #318DE6;
+}
+
+.meaning-word.pink {
+    border-color: #EB2082;
+    color: #EB2082;
+}
+
+.meaning-mottos {
+    font-size: 27px;
+    line-height: 1.6;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .meaning-explanation {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .meaning-part {
+        padding: 0;
+    }
+
+    .meaning-explanation:before,
+    .meaning-explanation:after {
+        left: 15%;
+        right: 15%;
+    }
+
+    .meaning-core-vision br,
+    .meaning-mottos br {
+        display: none;
+    }
+
+    .meaning-title {
+        font-size: 32px;
+    }
+
+    .meaning-question,
+    .meaning-core-vision,
+    .meaning-deeper,
+    .meaning-mottos {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .meaning-words {
+        gap: 10px;
+    }
+
+    .meaning-word {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+
+    .meaning-hnar {
+        font-size: 30px;
+    }
+}
+
+/* ####################################################
+        Logo Elements Explanation CSS
+    #################################################### */
+    .logo-meaning-section {
+        padding: 20px 20px 80px;
+        width: 100%;
+        position: relative;
+        background-color: #FFF4E3;
+    }
+    
+    .logo-meaning-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+
+
+    .logo-meaning-border {
+        position: relative;
+        padding: 40px;
+        background-color: #FFF4E3;
+        border-radius: 30px;
+        border: 2px solid #EB2082;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .logo-intro {
+        text-align: center;
+        font-family: 'Tw Cen MT', sans-serif;
+        font-size: 27px;
+        color: #000;
+        margin-bottom: 50px;
+    }
+    
+    .logo-elements-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    
+    .logo-element-card {
+        width: 320px;
+        min-height: 180px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .pink-card {
+        background-color: #FFF4E3;
+        border: 3px solid #d94f8e;
+    }
+    
+    .blue-card {
+        background-color: #FFF4E3;
+        border: 3px solid #4682B4;
+    }
+    
+    .card-content {
+        text-align: center;
+    }
+    
+    .card-title {
+        font-family: 'Kalam', sans-serif;
+        font-size: 26px;
+        font-style: italic;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    .card-subtitle {
+        font-family: 'Kalam', sans-serif;
+        font-size: 26px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .top-pink-text {
+        color: #730E3E;
+    }
+    
+    .pink-text {
+        color: #EB2082;
+    }
+
+    .top-blue-text {
+        color: #184774;
+    }
+    
+    .blue-text {
+        color: #318DE6;
+    }
+    
+    .logo-center {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rosette-image {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+    }
+    
+    .pink-arrow {
+        position: absolute;
+        width: 80px;
+        height: auto;
+        top: 10px;
+        left: -40px;
+        transform: rotate(-30deg);
+    }
+    
+    .blue-arrow {
+        position: absolute;
+        width: 80px;
+        height: auto;
+        bottom: 10px;
+        right: -40px;
+        transform: rotate(150deg);
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .logo-elements-container {
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .logo-element-card {
+            width: 80%;
+            min-height: 150px;
+        }
+        
+        .logo-center {
+            order: -1;
+            margin-bottom: 20px;
+        }
+        
+        .pink-arrow {
+            top: auto;
+            bottom: -20px;
+            left: 30px;
+            transform: rotate(-60deg);
+        }
+        
+        .blue-arrow {
+            top: -20px;
+            right: 30px;
+            bottom: auto;
+            transform: rotate(120deg);
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .logo-meaning-border {
+            padding: 30px 15px;
+        }
+        
+        .logo-intro {
+            font-size: 20px;
+        }
+        
+        .card-title {
+            font-size: 18px;
+        }
+        
+        .card-subtitle {
+            font-size: 22px;
+        }
+    }
+
+    /* ####################################################
+        Team Section
+    #################################################### */
+
+    .team-section {
+        padding: 60px 20px;
+        background-color: #FFF4E3;
+        width: 100%;
+    }
+    
+    .team-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .team-title {
+        color: #5E0231;
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-family: 'Tw Cen MT', sans-serif;
+    }
+    
+    .team-row {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .team-row-center {
+        justify-content: center;
+    }
+    
+    .team-member {
+        width: calc(50% - 20px);
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .team-row-center .team-member {
+        width: 500px;
+    }
+    
+    .member-image-container {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .blue-bg {
+        background-color: #87CEEB;
+    }
+    
+    .pink-bg {
+        background-color: #FFC0CB;
+    }
+    
+    .member-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .member-name {
+        font-family: 'Tw Cen MT', sans-serif;
+        font-size: 27px;
+        font-weight: bold;
+        margin: 10px 0 5px;
+    }
+    
+    .member-title {
+        font-family: 'Tw Cen MT', sans-serif;
+        font-size: 24px;
+        color: #000;
+        font-weight: 400;
+        margin: 0 0 15px;
+    }
+    
+    .member-bio {
+        font-family: 'Tw Cen MT', sans-serif;
+        font-size: 23px;
+        max-width: 30vw;
+        color: #000;
+        margin: 0 0 10px;
+        font-weight: 400;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .team-row {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .team-member {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 40px;
+        }
+        
+        .team-row-center .team-member {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .member-image-container {
+            width: 150px;
+            height: 150px;
+        }
+        
+        .member-name {
+            font-size: 18px;
+        }
+        
+        .member-title {
+            font-size: 14px;
+        }
+        
+        .member-bio {
+            font-size: 13px;
+        }
+    }
