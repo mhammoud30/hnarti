@@ -122,3 +122,16 @@ function load_custom_css_for_ourStory_page()
     }
 }
 add_action('wp_enqueue_scripts', 'load_custom_css_for_ourStory_page');
+
+function load_custom_css_for_press_page()
+{
+    if (is_page('press')) {
+        wp_enqueue_style(
+            'about-press-css',
+            get_template_directory_uri() . '/assets/css/press.css',
+            array(),
+            null
+        );
+    }
+}
+add_action('wp_enqueue_scripts', 'load_custom_css_for_press_page');

@@ -1,0 +1,102 @@
+.media-showcase-section {
+    padding: 60px 20px;
+    background-color: #FFF4E3;
+    width: 100%;
+}
+
+.media-showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.media-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.media-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Put the border on the .media-item itself */
+.blue-border {
+    border: 3px solid #318DE6;
+}
+
+.pink-border {
+    border: 3px solid #EB2082;
+}
+
+/* Let’s define an aspect ratio for the frame so images are uniform */
+.media-frame {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* adjust to your liking: 16/9, 4/3, etc. */
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    /* No bottom border so the bottom color can show for the title bar */
+}
+
+/* Make the image fill the container while cropping if needed */
+.media-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.media-title {
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Tw Cen MT', sans-serif;
+    font-size: 22px;
+    font-weight: Bold;
+    color: white;
+    letter-spacing: 1px;
+    /* We still want rounded corners on bottom */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.blue-bg {
+    background-color: #318DE6;
+}
+
+.pink-bg {
+    background-color: #EB2082;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .media-row {
+        justify-content: center;
+    }
+    
+    .media-item {
+        width: calc(50% - 20px);
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 650px) {
+    .media-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .media-item {
+        width: 100%;
+        max-width: 350px;
+    }
+}
