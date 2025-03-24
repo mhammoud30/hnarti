@@ -29,7 +29,9 @@
                 Armenian heritage, particularly Western Armenian, through
                 diverse social, artistic and cultural projects and events.
             </p>
-            <button href="#" class="intro-button">Our Story</button>
+            <div class="intro-button-container">
+            <a href="#" class="intro-button">Our Story</a>
+            </div>
         </div>
     </section>
 
@@ -37,7 +39,11 @@
         <div class="purpose-container">
             <div class="purpose-content">
                 <div class="purpose-text">
-                    <p class="purpose-p">We're on a mission to bridge our past to our present, breathing new life into our language and heritage, and proving that together, we can achieve the extraordinary!</p>
+                    <p class="purpose-p">We're on a mission to bridge our
+                         past to our present, breathing new 
+                         life into our language and heritage, 
+                         and proving that together, we can 
+                         achieve the extraordinary!</p>
                     <button class="purpose-button">Our Purpose</button>
                 </div>
             </div>

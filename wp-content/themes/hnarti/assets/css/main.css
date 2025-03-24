@@ -44,6 +44,7 @@
     z-index: 1;
     height: 100vh;
     padding-top: 15vh;
+    
     /* Adjust this value to move content up or down */
 }
 
@@ -61,9 +62,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 44px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 11vh;
+    font-family: 'Tw Cen MT', sans-serif;
     /* Adjust space between slogan and button */
 }
 
@@ -75,19 +77,16 @@
 
 .cta-button {
     display: inline-block;
-    padding: 12px 30px;
-    background-color: #ffffff;
+    padding: 8px 40px;
+    background-color: #FFF4E3;
     color: #730E3E;
+    font-family: 'Tw Cen MT', sans-serif;
     text-decoration: none;
     border-radius: 10px;
-    border: 2px solid #730E3E;
-    font-size: 20px;
+    border: 4px solid #730E3E;
+    font-size: 26px;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     position: relative;
-    box-shadow: 0 0 15px rgba(115, 14, 62, 0.5);
-    transition: all 0.3s ease;
 }
 
 .cta-button::before {
@@ -100,22 +99,9 @@
     background-color: #730E3E;
     z-index: -1;
     border-radius: 10px;
-    transform: translateY(5px) translateX(5px);
+    transform: translate(10px, 10px);
 }
 
-.cta-button::after {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background-color: rgba(115, 14, 62, 0.3);
-    z-index: -2;
-    border-radius: 25px;
-    filter: blur(15px);
-    opacity: 0.7;
-}
 
 
 /* Media query for responsiveness */
@@ -149,39 +135,41 @@
 /* Intro Section Styles */
 .intro-section {
     background-color: #FFF4E3;
-    /* Light pink background */
     padding: 1% 0;
     text-align: center;
 }
 
 .intro-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .intro-text {
-    font-size: 38px;
+    font-size: 34px;
     font-weight: bold;
     line-height: 1.6;
     color: #730E3E;
+    font-family: 'Tw Cen MT', sans-serif;
     /* Dark red color */
-    margin-bottom: 30px;
-
+    margin-bottom: 40px;
+    margin-top: 15%;
+    white-space: pre-line;
 }
 
 .intro-button {
-    background-color: #FFFFFF;
-    color: #EC2083;
-    font-family: 'Tw_cen_mt', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 10px;
     display: inline-block;
+    padding: 8px 40px;
+    background-color: #FFF4E3;
+    color: #EC2083;
+    font-family: 'Tw Cen MT', sans-serif;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+
+    border-radius: 10px;
     position: relative;
-    border: 2px solid #EC2083;
-    transition: all 0.3s ease;
+    border: 4px solid #EC2083;
 }
 
 .intro-button::before {
@@ -194,8 +182,10 @@
     background-color: #EC2083;
     z-index: -1;
     border-radius: 10px;
-    transform: translateY(5px) translateX(5px);
+    transform: translate(10px, 10px);
 }
+
+
 
 
 
@@ -220,17 +210,14 @@
 .purpose-section {
     display: flex;
     flex-direction: row; 
-    justify-content: space-between;  /* or space-around/center, etc. */
+    justify-content: center;  /* or space-around/center, etc. */
     align-items: center;            /* ensures vertical alignment */
-    min-height: 100vh;
     background-color: #FFF4E3;
-    padding: 20px;
-    box-sizing: border-box;
   }
 
 .purpose-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -238,12 +225,11 @@
 /* On larger screens */
 @media (min-width: 992px) {
   .purpose-container {
-    width: 45%;  /* left side */
-    margin: 0 2%;
+    width: 65%;  /* left side */
+    margin-left: 7%;
   }
   .compass-container {
     width: 45%;  /* right side */
-    margin: 0 2%;
   }
 }
 
@@ -259,12 +245,13 @@
 
 .purpose-text,
 .purpose-p {
-    font-size: 29px;
+    font-size: 25px;
     font-family: "Kalam", sans-serif;
     font-weight: bold;
     text-align: center;
     color: #EC2083;
     line-height: 1.6;
+    white-space: pre-line;
 }
 
 .purpose-content::after {
@@ -278,18 +265,18 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
-    transform: rotate(15deg);
+    transform: rotate(12deg);
 }
 
 .purpose-button {
-    background-color: #FFFFFF;
+    background-color: #FFF4E3;
     color: #EC2083;
-    font-family: 'Tw_cen_mt', sans-serif;
+    font-family: 'Tw Cen MT', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    padding: 10px 30px;
+    padding: 8px 40px;
     border-radius: 10px;
-    border: 2px solid #EC2083;
+    border: 4px solid #EC2083;
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -302,15 +289,15 @@
     background-color: #EC2083;
     z-index: -1;
     border-radius: 10px;
-    transform: translate(5px, 5px);
+    transform: translate(10px, 7px);
 }
 
 /* Updated Compass Container CSS */
 .compass-container {
     position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
+    width: 1000px;
+    max-width: 1200px;
+    margin: auto;
     height: 0;
     padding-bottom: 100%; /* Creates a responsive square */
     overflow: visible;
@@ -318,21 +305,17 @@
 
 @media (min-width: 992px) {
     .compass-container {
-        width: 45%;
         padding-bottom: 45%;
-        margin: 0 2.5%;
+        
     }
 }
 
 /* Simplified base styles for all compass elements */
 .compass-bg, .compass-hand, .compass-center {
     position: absolute;
-    /* Remove specific transform properties - will be handled by JS */
 }
 
 .compass-bg {
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
     object-fit: contain;
@@ -340,18 +323,15 @@
 }
 
 .compass-hand {
-    /* Size relative to container */
-    height: 75%;
+    height: 55%;
     z-index: 2;
-    /* Don't set position - JS will handle this */
 }
 
 .compass-center {
-    /* Size relative to container */
-    width: 15%;
+    width: 8%;
     height: auto;
     z-index: 3;
-    /* Don't set position - JS will handle this */
+
 }
 
 
@@ -367,6 +347,7 @@
     font-weight: bold;
     color: #318EE7;
     margin-bottom: 40px;
+    font-family: 'Tw Cen MT', sans-serif;
 }
 
 .wwut-button-container {
@@ -387,7 +368,6 @@
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 8px 8px 0 #318EE7;  /* Add this line for the shadow effect */
 }
 
 .wwut-image-button::before {
@@ -417,7 +397,7 @@
     right: 0;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
-    font-family: 'Tw_cen_mt', sans-serif;
+    font-family: 'Tw Cen MT', sans-serif;
     font-size: 30px;
     font-weight: bold;
     color: #318EE7;
@@ -454,8 +434,8 @@
 /* ===== FOLLOW ALONG SECTION STYLES ===== */
 .follow-along {
     background: linear-gradient(to bottom, 
-                  #e5d6bc 0%, 
-                  #e5d6bc 70%, 
+                  #F7DFB7 0%, 
+                  #F7DFB7 70%, 
                   #FFF4E3 70%, 
                   #FFF4E3 100%); /* Half darker beige, half lighter beige */  /* Warm beige background like in your reference */
     padding: 60px 20px;
@@ -474,6 +454,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: 'Tw Cen MT', sans-serif;
   }
   
   .follow-along .handle {
@@ -483,6 +464,7 @@
     margin-bottom: 40px;
     color: #730E3E;
     font-size: 1.2rem;
+    font-family: 'Tw Cen MT', sans-serif;
   }
   
   .follow-along .handle i {
@@ -567,7 +549,7 @@
 }
 
 .connect-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
 }
@@ -588,57 +570,62 @@
     justify-content: center;
     align-items: center;
     padding: 40px;
+    font-family: 'Tw Cen MT', sans-serif;
 }
 
 .connect-title {
-    font-size: 35px;
+    font-size: 34px;
     font-weight: bold;
     color: #EC2083;
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Tw Cen MT', sans-serif;
 }
 
 .connect-text {
-    font-size: 21px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.5;
     color: #EC2083;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: bold;
+    font-family: 'Tw Cen MT', sans-serif;
+    white-space: pre-line;
 }
 
 .connect-button {
     display: inline-block;
-    padding: 12px 30px;
-    background-color: #FFFFFF;
-    color: #318EE7;
+    padding: 8px 40px;
+    background-color: #318EE7;
+    color: #FFF;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
-    border: 2px solid #318EE7;
+    border: 4px solid #318EE7;
     transition: all 0.3s ease;
 }
 
 .connect-button:hover {
-    background-color: #EC2083;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #318EE7;
 }
 
 .flower-icon {
     position: absolute;
     width: 80px;
-    height: 80px;
+    height: auto;
 }
 
 .left-icon {
     margin-top: -13%;
-    left: 50px;
+    left: 70px;
 }
 
 .right-icon {
     margin-top: -13%;
-    right: 50px;
+    right: 70px;
 }
 
 @media (max-width: 768px) {
@@ -664,7 +651,7 @@
 /* Footer Styles */
 .site-footer {
     position: relative;
-    font-family: 'TW_Cen_MT', sans-serif;
+    font-family: 'Tw Cen MT', sans-serif;
 }
 
 .footer-top {
@@ -683,7 +670,7 @@
 }
 
 .footer-logo img {
-    height: 140px;
+    height: 250px;
 }
 
 .footer-content {
@@ -724,8 +711,8 @@
     background-color: #4d90db; /* Blue */
     color: white;
     border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
+    padding: 10px 25px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -734,7 +721,7 @@
 .footer-emblem {
     position: absolute;
     right: 5%;
-    top: 50%;
+    top: 40%;
     transform: translateY(-145%);
 }
 
@@ -744,7 +731,7 @@
 }
 
 .footer-bottom {
-    background-color: #e5d6bc; /* Darker cream color */
+    background-color: #F7DFB7; /* Darker cream color */
     padding: 60px 0;
     position: relative;
 }

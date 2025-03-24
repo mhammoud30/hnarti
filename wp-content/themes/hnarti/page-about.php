@@ -9,21 +9,18 @@
         <div class="hnarti-welcome-content">
             <h1 class="hnarti-greeting">Hey There, Fellow Hnaramid!</h1>
 
-            <p class="hnarti-intro">
-                We are Hnarti, a cultural platform dedicated to <strong>exploring
-                    Armenian heritage, particularly Western Armenian,</strong> through
+            <p class="hnarti-intro">We are Hnarti, a cultural platform dedicated to <strong>exploring
+                Armenian heritage, particularly Western Armenian,</strong> through
                 diverse social, artistic and cultural projects and events.
             </p>
 
-            <p class="hnarti-mission">
-                Hnarti was founded as a means to <strong>reconnect with our roots and
-                    explore the profound depth and significance of our cultural
-                    heritage.</strong> Together, we can prevent our culture from fading away
+            <p class="hnarti-mission">Hnarti was founded as a means to <strong>reconnect with our roots and
+                explore the profound depth and significance of our cultural
+                heritage.</strong> Together, we can prevent our culture from fading away
                 and ensure that our legacy thrives for generations to come.
             </p>
 
-            <p class="hnarti-call-to-action">
-                Join us in this vital mission to preserve and
+            <p class="hnarti-call-to-action">Join us in this vital mission to preserve and
                 celebrate our unique Armenian heritage!
             </p>
         </div>
@@ -84,8 +81,8 @@
 
                 <div class="logo-center">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-rosette.png" alt="Rosette Symbol" class="rosette-image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pink-arrow.png" alt="" class="pink-arrow">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/blue-arrow.png" alt="" class="blue-arrow">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pinkArrow.png" alt="" class="pink-arrow">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/blueArrow.png" alt="" class="blue-arrow">
                 </div>
 
                 <div class="logo-element-card blue-card">

@@ -2,7 +2,7 @@
 
 /* Hnarti Welcome Section */
 .hnarti-welcome-section {
-    background-color: #e5d6bc;
+    background-color: #F7DFB7;
     padding: 40px 20px 80px;
     width: 100%;
 }
@@ -16,15 +16,17 @@
     padding: 30px;
     background-color: #FFF4E3;
     box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.1);
+    margin-top: 3%;
 
 }
 
 .hnarti-logo {
+    
     position: absolute;
-    top: -30px;
-    right: -30px;
-    width: 100px;
-    height: 100px;
+    top: -50px;
+    right: -40px;
+    width: 140px;
+    height: 140px;
 }
 
 .hnarti-logo img {
@@ -35,6 +37,7 @@
 .hnarti-welcome-content {
     text-align: center;
     padding: 10px 40px;
+    white-space: pre-line;
 }
 
 .hnarti-greeting {
@@ -42,7 +45,7 @@
     color: #EB2082;
     font-size: 55px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .hnarti-intro,
@@ -50,9 +53,9 @@
 .hnarti-call-to-action {
     font-family: 'Tw Cen MT', sans-serif;
     color: #333;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hnarti-intro strong,
@@ -61,10 +64,9 @@
 }
 
 .hnarti-call-to-action {
-    font-size: 22px;
     font-weight: bold;
-    margin-top: 40px;
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -163,30 +165,12 @@
 .meaning-explanation {
     display: flex;
     justify-content: center;
-    gap: 100px;
     margin: 30px auto;
     position: relative;
 }
 
-.meaning-explanation:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 25%;
-    right: 25%;
-    height: 1px;
-    background-color: #ddd;
-}
 
-.meaning-explanation:after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 25%;
-    right: 25%;
-    height: 1px;
-    background-color: #ddd;
-}
+
 
 .meaning-part {
     padding: 0 20px;
@@ -210,12 +194,13 @@
     font-size: 27px;
     line-height: 1.6;
     margin: 50px auto 30px;
+    white-space: nowrap;
 }
 
 .meaning-hnar {
-    font-size: 27px;
+    font-size: 35px;
     font-weight: bold;
-    margin: 30px 0;
+    margin: 40px 0;
     color: #000;
 }
 
@@ -232,17 +217,17 @@
     padding: 8px 20px;
     border-radius: 30px;
     font-size: 27px;
-    border: 1px solid;
+    border: 2px solid;
 }
 
 .meaning-word.blue {
     border-color: #318DE6;
-    color: #318DE6;
+    color: #000;
 }
 
 .meaning-word.pink {
     border-color: #EB2082;
-    color: #EB2082;
+    color: #000;
 }
 
 .meaning-mottos {
@@ -419,20 +404,20 @@
     
     .pink-arrow {
         position: absolute;
-        width: 80px;
+        width: 120px;
         height: auto;
-        top: 10px;
-        left: -40px;
-        transform: rotate(-30deg);
+        top: 5px;
+        left: -70px;
+        transform: rotate(-1deg);
     }
     
     .blue-arrow {
         position: absolute;
-        width: 80px;
+        width: 120px;
         height: auto;
-        bottom: 10px;
-        right: -40px;
-        transform: rotate(150deg);
+        bottom: 5px;
+        right: -70px;
+        transform: rotate(1deg);
     }
     
     /* Responsive adjustments */

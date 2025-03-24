@@ -14,17 +14,20 @@
 
 .contact-section h1 {
     color: #730E3E;
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 30px;
     font-weight: 700;
+    font-family: 'Tw Cen MT', sans-serif;
 
 }
 
 .contact-intro {
     color: #730E3E; /* Matching color for intro text */
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 40px;
     line-height: 1.5;
+    font-family: 'Tw Cen MT', sans-serif;
+    white-space: nowrap;
 }
 
 .contact-form {
@@ -44,33 +47,36 @@
 .contact-form textarea {
     width: 100%;
     padding: 15px 20px;
-    border: 1px solid #E0D3C8; /* Light border color */
+    border: 1.5px solid #730E3E; /* Light border color */
     border-radius: 30px;
     background-color: #FFF4E3;
     font-size: 22px;
     color: #730E3E;
     outline: none;
+    font-family: 'Tw Cen MT', sans-serif;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: #730E3E;
     opacity: 0.7;
+    font-family: 'Tw Cen MT', sans-serif;
 }
 
 .contact-form textarea {
     height: 140px;
     resize: vertical;
     border-radius: 20px;
+    font-family: 'Tw Cen MT', sans-serif;
 }
 
 .submit-btn {
-    background-color: #318de6; /* Blue button color as shown in image */
+    background-color: #4d90db; /* Blue button color as shown in image */
     color: white;
     border: none;
-    border-radius: 30px;
-    padding: 12px 40px;
-    font-size: 26px;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

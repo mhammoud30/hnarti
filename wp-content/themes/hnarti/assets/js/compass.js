@@ -36,14 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Calculate compass hand sizing and position - use translate for more precise positioning
         compassHand.style.left = 'calc(50% + 15px)';
-        compassHand.style.top = 'calc(50% + 20px)';
+        compassHand.style.top = 'calc(50% + 25px)';
         compassHand.style.transform = 'translate(-50%, -50%)';
         
         // Calculate compass center position - use translate for more precise positioning
         // With slight offset to bottom and right
         compassCenter.style.position = 'absolute';
-        compassCenter.style.left = 'calc(50% + 10px)';  // 10px to the right
-        compassCenter.style.top = 'calc(50% + 20px)';   // 15px to the bottom
+        compassCenter.style.left = 'calc(50% + 13px)';  // 10px to the right
+        compassCenter.style.top = 'calc(50% + 25px)';   // 15px to the bottom
         compassCenter.style.transform = 'translate(-50%, -50%)';
         
         console.log('Positioned compass elements', {
