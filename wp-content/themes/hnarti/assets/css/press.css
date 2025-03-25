@@ -19,39 +19,42 @@
 
 .media-item {
     width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Card container with border */
+.media-card {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
     border-radius: 20px;
     overflow: hidden;
 }
 
-/* Put the border on the .media-item itself */
+/* Border styles */
 .blue-border {
-    border: 3px solid #318DE6;
+    border: 5px solid #318DE6;
 }
 
 .pink-border {
-    border: 3px solid #EB2082;
+    border: 5px solid #EB2082;
 }
 
-/* Let’s define an aspect ratio for the frame so images are uniform */
+/* Frame container */
 .media-frame {
     width: 100%;
-    aspect-ratio: 4 / 3; /* adjust to your liking: 16/9, 4/3, etc. */
+    aspect-ratio: 4 / 3;
     position: relative;
     overflow: hidden;
-    background-color: white;
-    /* No bottom border so the bottom color can show for the title bar */
 }
 
-/* Make the image fill the container while cropping if needed */
+/* Image styling to ensure complete coverage */
 .media-image {
+    display: block;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    left: -7px;
+    width: 110%;
+    height: 110%;
     object-fit: cover;
     object-position: center;
 }
@@ -64,9 +67,6 @@
     font-weight: Bold;
     color: white;
     letter-spacing: 1px;
-    /* We still want rounded corners on bottom */
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 .blue-bg {

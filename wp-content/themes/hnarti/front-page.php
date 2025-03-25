@@ -115,7 +115,7 @@
 
     <section class="lets-connect">
         <div class="connect-container">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rectangle.png" alt="Connect background" class="connect-background">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pinkRectangle.png" alt="Connect background" class="connect-background">
             <div class="connect-content">
                 <h2 class="connect-title">LET'S CONNECT</h2>
                 <p class="connect-text">
