@@ -112,7 +112,7 @@ add_action('wp_enqueue_scripts', 'load_custom_css_for_contact_page');
 
 function load_custom_css_for_ourStory_page()
 {
-    if (is_page('about')) {
+    if (is_page('about-our-story')) {
         wp_enqueue_style(
             'about-our-story-css',
             get_template_directory_uri() . '/assets/css/about-our-story.css',
