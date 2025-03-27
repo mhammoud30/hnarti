@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('twcenmt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('twcenmt-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('twcenmt-bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    background-color: #FFF4E3;
+    color: #000000;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8%;
+    margin-top: 2%;
+}
+
+.main-content {
+    flex: 2;
+    padding-right: 30px;
+}
+
+.sidebar {
+    max-width: 370px;
+    flex: 1;
+    padding: 20px;
+}
+
+.main-title {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 47px;
+    font-weight: bold;
+    color: #730E3E;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.release-date {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #730E3E;
+    padding: 5px;
+}
+
+.intro-text {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #000000;
+    white-space: pre-line;
+    margin-top: 50px !important;
+}
+
+.section-title {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.highlight-text {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #730E3E;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.paragraph-text {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.objectives-list {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.download-section {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.download-title {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #730E3E;
+    margin-bottom: 15px;
+    text-align: left;
+    border-bottom: 2px solid #730E3E;
+    padding-bottom: 15px;
+}
+
+.media-preview {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #e0d8c9;
+}
+
+.language-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.language-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.language-button img {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.language-button-text {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact-section {
+    margin-top: 30px;
+}
+
+.contact-title {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #730E3E;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #730E3E;
+}
+
+.contact-text {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.contact-button {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #730E3E;
+    text-align: center;
+    padding: 8px 40px;
+    border: 2px solid #730E3E;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.armenian-button {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #730E3E;
+    text-align: center;
+    padding: 8px 40px;
+    border: 2px solid #730E3E;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    white-space: nowrap;
+}

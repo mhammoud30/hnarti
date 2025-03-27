@@ -30,7 +30,7 @@
                 diverse social, artistic and cultural projects and events.
             </p>
             <div class="intro-button-container">
-            <a href="#" class="intro-button">Our Story</a>
+                <a href="#" class="intro-button">Our Story</a>
             </div>
         </div>
     </section>

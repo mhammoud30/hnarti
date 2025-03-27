@@ -32,11 +32,13 @@
 
 /* Border styles */
 .blue-border {
-    border: 5px solid #318DE6;
+    border: 3px solid #318DE6;
+    border-bottom: 10px solid #318DE6;
 }
 
 .pink-border {
-    border: 5px solid #EB2082;
+    border: 3px solid #EB2082;
+    border-bottom: 10px solid #EB2082;
 }
 
 /* Frame container */
@@ -70,11 +72,13 @@
 }
 
 .blue-bg {
-    background-color: #318DE6;
+    color: #318DE6;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .pink-bg {
-    background-color: #EB2082;
+    color: #EB2082;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Responsive adjustments */
