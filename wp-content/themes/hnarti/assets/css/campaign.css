@@ -52,7 +52,6 @@ body {
 }
 
 .main-title {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
     font-size: 47px;
     font-weight: bold;
     color: #730E3E;
@@ -63,7 +62,6 @@ body {
 }
 
 .release-date {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -85,7 +83,6 @@ body {
 }
 
 .intro-text {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
     font-size: 15px;
     font-weight: bold;
     font-style: italic;
@@ -93,41 +90,35 @@ body {
     text-align: left;
     color: #000000;
     white-space: pre-line;
-    margin-top: 50px !important;
+    margin-top: 30px !important;
 }
 
 .section-title {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     margin-top: 30px;
-    margin-bottom: 15px;
     text-align: left;
 }
 
 .highlight-text {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: #730E3E;
-    margin-bottom: 15px;
     text-align: left;
 }
 
 .paragraph-text {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 15px;
     text-align: left;
+    font-weight: bold;
+    white-space: pre-line;
+    margin-top: -3%;
 }
 
 .objectives-list {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     margin-left: 20px;
-    margin-bottom: 20px;
     text-align: left;
 }
 
