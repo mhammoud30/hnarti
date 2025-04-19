@@ -149,3 +149,30 @@ function load_custom_css_for_campaign_page()
     }
 }
 add_action('wp_enqueue_scripts', 'load_custom_css_for_campaign_page');
+
+function load_custom_css_for_ourPurpose_page()
+{
+    if (is_page('about-our-purpose')) {
+        wp_enqueue_style(
+            'about-our-purpose-css',
+            get_template_directory_uri() . '/assets/css/about-our-purpose.css',
+            array(),
+            null
+        );
+    }
+}
+add_action('wp_enqueue_scripts', 'load_custom_css_for_ourPurpose_page');
+
+
+function load_custom_css_for_joinUs_page()
+{
+    if (is_page('join-us')) {
+        wp_enqueue_style(
+            'join-us-css',
+            get_template_directory_uri() . '/assets/css/join-us.css',
+            array(),
+            null
+        );
+    }
+}
+add_action('wp_enqueue_scripts', 'load_custom_css_for_joinUs_page');

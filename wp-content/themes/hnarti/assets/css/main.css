@@ -1,11 +1,41 @@
 /* Import header styles */
+
 @import url('header.css');
+
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('twcenmt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('twcenmt-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('twcenmt-bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
 
 /* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
 }
 
 /* Add any other global styles or styles for other components here */

@@ -72,7 +72,7 @@
             </div>
         </div>
     </section>
-
+<!-- 
     <section class="follow-along">
         <div class="container">
             <h2>FOLLOW ALONG</h2>
@@ -84,33 +84,33 @@
             </div>
 
             <div class="instagram-grid">
-                <!-- Instagram Post 1 -->
+                
                 <a href="https://www.instagram.com/p/POST_ID_1/" target="_blank" rel="noopener noreferrer">
                     <img src="/api/placeholder/220/220" alt="Instagram post 1" />
                 </a>
 
-                <!-- Instagram Post 2 -->
+                
                 <a href="https://www.instagram.com/p/POST_ID_2/" target="_blank" rel="noopener noreferrer">
                     <img src="/api/placeholder/220/220" alt="Instagram post 2" />
                 </a>
 
-                <!-- Instagram Post 3 -->
+               
                 <a href="https://www.instagram.com/p/POST_ID_3/" target="_blank" rel="noopener noreferrer">
                     <img src="/api/placeholder/220/220" alt="Instagram post 3" />
                 </a>
 
-                <!-- Instagram Post 4 -->
+               
                 <a href="https://www.instagram.com/p/POST_ID_4/" target="_blank" rel="noopener noreferrer">
                     <img src="/api/placeholder/220/220" alt="Instagram post 4" />
                 </a>
 
-                <!-- Instagram Post 5 -->
+                
                 <a href="https://www.instagram.com/p/POST_ID_5/" target="_blank" rel="noopener noreferrer">
                     <img src="/api/placeholder/220/220" alt="Instagram post 5" />
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <section class="lets-connect">

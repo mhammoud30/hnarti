@@ -27,10 +27,10 @@ $content = [
     'download_media' => 'DOWNLOAD MEDIA',
     'download_press' => 'DOWNLOAD PRESS RELEASE',
     'language_buttons' => [
-        'EN' => 'Recall, Reconnect, Revive: A Campaign to Revitalize Western Armenian',
-        'AM' => 'Recall, Reconnect, Revive: A Campaign to Revitalize Western Armenian',
-        'AR' => 'Recall, Reconnect, Revive: A Campaign to Revitalize Western Armenian',
-        'FR' => 'Recall, Reconnect, Revive: A Campaign to Revitalize Western Armenian'
+        'en' => 'Recall, Reconnect, Revive: A Campaign to Revitalize Western Armenian',
+        'am' => 'Recall, Reconnect, Revive: A Campaign to Revitalize Western Armenian',
+        'ar' => 'Recall, Reconnect, Revive: A Campaign to Revitalize Western Armenian',
+        'fr' => 'Recall, Reconnect, Revive: A Campaign to Revitalize Western Armenian'
     ],
     'contact_title' => 'CONTACT',
     'contact_text' => 'IF YOU HAVE ANY QUESTIONS PLEASE GET IN TOUCH',

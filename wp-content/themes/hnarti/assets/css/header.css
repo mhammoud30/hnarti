@@ -122,7 +122,7 @@ body {
 /* Desktop styles */
 @media (min-width: 1024px) {
     .header-container {
-        max-width: 1400px;
+        max-width: 1600px;
         margin: 0 auto;
         padding: 0 30px;
         height: 80px;

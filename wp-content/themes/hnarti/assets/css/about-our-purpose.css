@@ -1,0 +1,504 @@
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('twcenmt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('twcenmt-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('twcenmt-bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tw Cen MT', Arial, sans-serif;
+    background-color: #FFF4E3;
+}
+
+.about-purpose {
+    margin-bottom: 2%;
+}
+
+.goal-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal-container {
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (min-width: 992px) {
+    .goal-container {
+        width: 65%;
+        margin-left: 7%;
+    }
+
+    .navigator-container {
+        width: 35%;
+    }
+}
+
+.goal-content {
+    padding: 10px;
+    position: relative;
+    overflow: visible;
+}
+
+.goal-text .goal-p {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #730E3E;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    white-space: pre-line;
+}
+
+/* Color utility classes */
+.objective-color {
+    color: #EB2082;
+}
+
+.path-color {
+    color: #318DE6;
+}
+
+/* Updated Compass Container CSS */
+.compass-container {
+    position: relative;
+    width: 1000px;
+    max-width: 1200px;
+    margin: auto;
+    height: 0;
+    padding-bottom: 100%;
+    /* Creates a responsive square */
+    overflow: visible;
+}
+
+@media (min-width: 992px) {
+    .compass-container {
+        padding-bottom: 45%;
+
+    }
+}
+
+/* Simplified base styles for all compass elements */
+.compass-bg,
+.compass-hand,
+.compass-center {
+    position: absolute;
+}
+
+.compass-bg {
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.compass-hand {
+    height: 55%;
+    z-index: 2;
+}
+
+.compass-center {
+    width: 8%;
+    height: auto;
+    z-index: 3;
+
+}
+
+
+
+/* --- SECTION BACKGROUND -------------------------------------------------- */
+.our-vision {
+    /* two‑tone beige band (darker 70%, lighter 30%) */
+    background: linear-gradient(to bottom,
+            #f7dfb7 0%,
+            #f7dfb7 50%,
+            #fff4e3 50%,
+            #fff4e3 100%);
+    padding: 100px 20px;
+    /* top/bottom breathing room */
+    display: flex;
+    justify-content: center;
+    /* centres the inner block horizontally */
+}
+
+/* --- FRAME + CONTENT LAYERS --------------------------------------------- */
+.vision-wrapper {
+    position: relative;
+    max-width: 920px;
+    /* keeps everything neat on large screens */
+    width: 90%;
+}
+
+/* pink outline with curved corners + blue “leaf” icons */
+.vision-frame {
+    position: absolute;
+    inset: 0;
+    /* stretch to wrapper’s edges */
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    /* sits behind the text & eye */
+    pointer-events: none;
+    /* avoids accidental clicks/selections */
+}
+
+/* everything that should appear *inside* the pink frame */
+.vision-content {
+    position: relative;
+    z-index: 2;
+    padding: 80px 60px;
+    /* gap between border and text */
+    text-align: center;
+}
+
+/* --- TYPOGRAPHY ---------------------------------------------------------- */
+.vision-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #7a0039;
+    /* rich maroon ‑ tweak if brand differs */
+    margin-bottom: 50px;
+}
+
+.vision-content p {
+    max-width: 7000px;
+    margin: 40px auto 0;
+    line-height: 1.55;
+    font-weight: bold;
+    font-size: 25px;
+    color: #7a0039;
+}
+
+/* --- DECORATIVE EYE ------------------------------------------------------ */
+.vision-eye {
+    width: clamp(220px, 35vw, 300px);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* --- RESPONSIVE TWEAKS --------------------------------------------------- */
+@media (max-width: 640px) {
+    .vision-content {
+        padding: 60px 30px;
+    }
+
+    .vision-content h2 {
+        margin-bottom: 35px;
+    }
+
+    .vision-content p {
+        font-size: 1rem;
+    }
+}
+
+
+/* ------- SECTION WRAPPER ------------------------------------------------ */
+.our-mission {
+    /* same warm beige as design */
+    text-align: center;
+    margin-bottom: 4%;
+    padding-bottom: 10px;
+}
+
+.our-mission h2 {
+    color: #7a0039;
+    /* maroon brand colour */
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 90px;
+}
+
+/* ------- GRID LAYOUT ---------------------------------------------------- */
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* always two cards per row   */
+    gap: 30px;
+    /* row / column gaps          */
+    /* row / column gaps */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ------- INDIVIDUAL CARD ----------------------------------------------- */
+.mission-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    /* inner breathing room */
+    text-align: left;
+    /* keeps line breaks natural */
+}
+
+/* decorative PNG (frame + number badge + drop‑shadow) */
+.mission-frame {
+    position: absolute;
+    inset: 0;
+    /* stretch to edges */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    /* sits behind text */
+    pointer-events: none;
+}
+
+.mission-card p {
+    position: relative;
+    z-index: 2;
+    line-height: 1.45;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    white-space: pre-line;
+}
+
+/* colour variants for text ---------------------------------------------- */
+.mission-card.blue p {
+    color: #3183e6;
+}
+
+/* adjust if your blue differs */
+.mission-card.pink p {
+    color: #e90d7a;
+}
+
+/* ------- RESPONSIVE TOUCH‑UP ------------------------------------------- */
+@media (max-width: 640px) {
+    .mission-card {
+        padding: 55px 35px;
+    }
+
+    .mission-grid {
+        gap: 50px;
+    }
+
+    .our-mission h2 {
+        margin-bottom: 60px;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* single‑column on mobile */
+}
+
+
+/* -------- SECTION WRAPPER ---------------------------------------------- */
+.our-values {
+    background: #f7dfb7;
+    /* same darker beige as top band   */
+    padding: 50px 20px 100px;
+    text-align: center;
+}
+
+.our-values h2 {
+    color: #7a0039;
+    /* brand maroon                   */
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* -------- GRID ---------------------------------------------------------- */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 up on desktop              */
+    gap: 60px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1020px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* -------- INDIVIDUAL CARD ---------------------------------------------- */
+.value-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 40px 90px;
+    /* enough space for icon + copy      */
+    text-align: center;
+}
+
+/* pink rounded rectangle (decorative PNG) */
+.value-frame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* icon inside the card */
+.value-icon {
+    width: 110px;
+    /* ←  pick any size you like */
+    height: 110px;
+    /* ←  same height guarantees a square */
+    object-fit: contain;
+    /*   keeps the whole drawing visible  */
+    position: relative;
+    z-index: 2;
+    margin-bottom: 45px;
+}
+
+/* headline & copy */
+.value-card h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #7a0039;
+    margin-bottom: 24px;
+}
+
+.value-card p {
+    position: relative;
+    z-index: 2;
+    font-size: 15px;
+    line-height: 1.55;
+    color: #111;
+    margin: 0;
+    max-width: 300px;
+    white-space: pre-line;
+}
+
+/* small tweak for very narrow screens */
+@media (max-width: 420px) {
+    .value-card {
+        padding: 100px 30px 80px;
+    }
+
+    .value-icon {
+        width: 90px;
+        margin-bottom: 35px;
+    }
+}
+
+
+/* ---------- SECTION BACKDROP ------------------------------------------- */
+.envelope-cta {
+	background: #fff4e3;                /* same light beige as other bands */
+	padding: 140px 20px 180px;
+	text-align: center;
+}
+
+/* ---------- ENVELOPE LAYOUT ------------------------------------------- */
+.envelope-stack {
+    /* master width: change once and everything scales together          */
+    width: clamp(320px, 65vw, 640px);     /* 640px ≈ 31% of 2048px asset */
+    aspect-ratio: 2048 / 1646;            /* keeps the front flap crisp  */
+    position: relative;
+    margin: 0 auto;
+}
+
+/* FRONT flap – reference layer (100 %) */
+.envelope-front {
+    width: 112%;
+    height: auto;
+    position: absolute;
+    transform: translate(0%, 32%); 
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+/* BACK flap – 94.7 % of reference width, centred */
+.envelope-back {
+    width: 94.7%;
+    height: auto;
+    position: absolute;
+    inset: 0;
+    margin: auto;                         /* centre within the stack     */
+    z-index: 1;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+/* LETTER – 93.8 % width; starts 60 % “inside” and slides up */
+.envelope-letter {
+    width: 93.8%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 37%;                             /* where the letter mouth is   */
+    transform: translate(-50%, 0%);      /* 60 % down = hidden inside   */
+    transition: transform 1.4s ease-out;
+    z-index: 2;
+    object-fit: contain;
+}
+
+/* final position when JS adds this class */
+.envelope-letter.slide-out {
+    transform: translate(-50%, -35%);
+}
+
+/* CTA button – pin to front flap */
+.btn-join-mission {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;                          /* adjust until it looks right */
+    transform: translateX(-50%);
+    z-index: 4;
+    padding: 14px 36px;
+    font-weight: 600;
+    border: 2px solid #e0177f;
+    border-radius: 6px;
+    background: #fff;
+    color: #7a0039;
+    text-decoration: none;
+    transition: background .25s;
+}
+.btn-join-mission:hover { background:#fbe8f1; }
+
+/* narrow‑screen tweak */
+@media (max-width:480px){
+    .btn-join-mission{ padding:12px 28px; font-size:.95rem; }
+}
