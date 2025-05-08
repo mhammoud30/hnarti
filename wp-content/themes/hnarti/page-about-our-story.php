@@ -29,7 +29,7 @@
 
 <div class="hnarti-meaning-section">
     <div class="hnarti-meaning-container">
-        <h2 class="meaning-title">Behind the Name</h2>
+        <p class="meaning-title">Behind the Name</p>
 
         <p class="meaning-question">We frequently get asked, 'What does "Hnarti" mean?'</p>
 
@@ -50,7 +50,7 @@
 
         <p class="meaning-deeper">However, a closer look reveals a hidden word within the name that reflects a deeper meaning.</p>
 
-        <h3 class="meaning-hnar">HNAR</h3>
+        <p class="meaning-hnar">HNAR</p>
 
         <div class="meaning-words">
             <span class="meaning-word blue">solution</span>
@@ -100,15 +100,15 @@
 <div class="team-section">
     <div class="team-container">
 
-        <h2 class="team-title">Meet our Team</h2>
+        <p class="team-title">Meet our Team</p>
         <div class="team-row">
-            <!-- Tamar Zeitounian -->
+           
             <div class="team-member">
                 <div class="member-image-container blue-bg">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Tamar.png" alt="Tamar with cat" class="member-image">
                 </div>
-                <h3 class="member-name">Tamar Megrian</h3>
-                <h4 class="member-title">Founder & Project Manager</h4>
+                <p class="member-name">Tamar Megrian</p>
+                <p class="member-title">Founder</p>
                 <p class="member-bio">
                     Tamar has an uncanny ability to see the silver
                     lining in every cloud. As a child, she always
@@ -126,30 +126,39 @@
                 </p>
             </div>
 
-            <!-- Lilt Manukian -->
+            
             <div class="team-member">
                 <div class="member-image-container pink-bg">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Lilit.png" alt="Lilt with tambourine" class="member-image">
                 </div>
-                <h3 class="member-name">Lilit Megrian</h3>
-                <h4 class="member-title">Founder & Executive Director</h4>
+                <p class="member-name">Lilit Megrian</p>
+                <p class="member-title">Founder</p>
                 <p class="member-bio">
-                    Growing up, Lilit has always viewed her heritage as a large puzzle, waiting to be explored. Between scouring dictionaries for forgotten words and dragging her unsuspecting family into her Armenian video diary, she transformed her fascination into a world of endless possibilities.
+                    Growing up, Lilit has always viewed her heritage
+                    as a large puzzle, waiting to be explored.
+                    Between scouring dictionaries for forgotten
+                    words and dragging her unsuspecting family into
+                    her Armenian video diary, she transformed her
+                    fascination into a world of endless possibilities.
                 </p>
                 <p class="member-bio">
-                    With a background in branding and fine arts, Lilt brings a creative and visionary approach to guiding the platform's development, ensuring that each project thoughtfully connects with both traditional values and modern perspectives.
+                    With a background in branding and fine arts,
+                    Lilt brings a creative and visionary approach to
+                    guiding the platform's development, ensuring
+                    that each project thoughtfully connects with both
+                    traditional values and modern perspectives.
                 </p>
             </div>
         </div>
 
         <div class="team-row">
-            <!-- Vana Zeitounian -->
+            
             <div class="team-member">
                 <div class="member-image-container pink-bg">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Vana.png" alt="Vana with art brushes" class="member-image">
                 </div>
-                <h3 class="member-name">Vana Zeitounian</h3>
-                <h4 class="member-title">Co-Founder & Administrative Coordinator</h4>
+                <p class="member-name">Vana Zeitounian</p>
+                <p class="member-title">Co-Founder</p>
                 <p class="member-bio">
                     Whether she’s on stage or behind the scenes,
                     Vana’s always buzzing with energy, ready to
@@ -162,13 +171,13 @@
                 </p>
             </div>
 
-            <!-- Sevan Zeitounian -->
+            
             <div class="team-member">
                 <div class="member-image-container blue-bg">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Sevan.png" alt="Sevan with embroidery" class="member-image">
                 </div>
-                <h3 class="member-name">Sevan Zeitounian</h3>
-                <h4 class="member-title">Co-Founder & Language Specialist</h4>
+                <p class="member-name">Sevan Zeitounian</p>
+                <p class="member-title">Co-Founder</p>
                 <p class="member-bio">
                     Sevan is our resident language wizard,
                     wielding words into compelling lines.
@@ -188,8 +197,8 @@
                 <div class="member-image-container pink-bg">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Castiel.png" alt="Cavalot the cat" class="member-image">
                 </div>
-                <h3 class="member-name">Castiel </h3>
-                <h4 class="member-title">Head of Paw-sitivity</h4>
+                <p class="member-name">Castiel </p>
+                <p class="member-title">Head of Paw-sitivity</p>
                 <p class="member-bio">
                     This ball of fluff is more than an adorable face;
                     he’s Hnarti’s backbone. Armed with a powerful
@@ -198,7 +207,6 @@
                     team. His daily duties include napping on
                     important documents and testing every package
                     box we receive - just for precautionary measures.
-
                 </p>
             </div>
         </div>

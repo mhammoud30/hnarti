@@ -2,7 +2,7 @@
 
 <section class="contact-section">
     <div class="container">
-        <h1>Contact Us</h1>
+        <p class="container-title">Contact Us</p>
 
         <p class="contact-intro">Have a question or want to connect? Reach out and we'll be in touch soon!</p>
 

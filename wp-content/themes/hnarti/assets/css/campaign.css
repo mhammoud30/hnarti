@@ -1,36 +1,26 @@
 @font-face {
     font-family: 'Tw Cen MT';
-    src: url('twcenmt.ttf') format('truetype');
+    src: local('Tw Cen MT'),
+    url('../../fonts/TwCenMTStdBold.woff2') format('woff2'),
+    url('../../fonts/TwCenMTStdBold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Tw Cen MT';
-    src: url('twcenmt-bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Tw Cen MT';
-    src: url('twcenmt-bolditalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Tw Cen MT'!important;
 }
 
 body {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
     background-color: #FFF4E3;
     color: #000000;
     line-height: 1.5;
     margin: 0 auto;
+    font-family: 'Tw Cen MT'!important;
 }
 
 .container {
@@ -53,7 +43,6 @@ body {
 
 .main-title {
     font-size: 47px;
-    font-weight: bold;
     color: #730E3E;
     margin-bottom: 20px;
     line-height: 1.4;
@@ -63,7 +52,6 @@ body {
 
 .release-date {
     font-size: 16px;
-    font-weight: bold;
     margin-bottom: 30px;
     text-align: left;
 }
@@ -75,49 +63,40 @@ body {
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #730E3E;
+    height: 40px;
     padding: 5px;
 }
 
 .intro-text {
     font-size: 15px;
-    font-weight: bold;
     font-style: italic;
     margin-bottom: 20px;
     text-align: left;
     color: #000000;
     white-space: pre-line;
-    margin-top: 30px !important;
 }
 
 .section-title {
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 20px;
+    color: #730E3E;
     margin-top: 30px;
     text-align: left;
 }
 
 .highlight-text {
     font-size: 15px;
-    font-weight: bold;
-    color: #730E3E;
     text-align: left;
 }
 
 .paragraph-text {
     font-size: 15px;
     text-align: left;
-    font-weight: bold;
     white-space: pre-line;
     margin-top: -3%;
 }
 
 .objectives-list {
     font-size: 15px;
-    font-weight: bold;
     margin-left: 20px;
     text-align: left;
 }
@@ -130,7 +109,6 @@ body {
 .download-title {
     font-family: 'Tw Cen MT', Arial, sans-serif;
     font-size: 18px;
-    font-weight: bold;
     color: #730E3E;
     margin-bottom: 15px;
     text-align: left;
@@ -164,19 +142,18 @@ body {
 }
 
 .language-button-text {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
     font-size: 15px;
-    font-weight: bold;
 }
 
 .contact-section {
     margin-top: 30px;
+    width: 20vw;
+    margin-bottom: 20px;
 }
 
 .contact-title {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+    width: 25vw;
+    font-size: 24px;
     margin-bottom: 15px;
     text-align: left;
     color: #730E3E;
@@ -185,40 +162,27 @@ body {
 }
 
 .contact-text {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 16px;
     margin-bottom: 15px;
     text-align: left;
     white-space: nowrap;
 }
 
-.contact-button {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
-    font-size: 21px;
-    font-weight: bold;
-    color: #730E3E;
-    text-align: center;
-    padding: 8px 40px;
-    border: 2px solid #730E3E;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    white-space: nowrap;
+
+
+
+
+.sub-content{
+    padding: 0 8%;
 }
 
-.armenian-button {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
-    font-size: 21px;
-    font-weight: bold;
-    color: #730E3E;
-    text-align: center;
-    padding: 8px 40px;
-    border: 2px solid #730E3E;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    white-space: nowrap;
+.paragraph{
+    font-size: 15px;
+    text-align: left;
+    white-space: pre-line;
+    margin-top: -1%;
+}
+
+.contact-button{
+   width: 25vw;
 }

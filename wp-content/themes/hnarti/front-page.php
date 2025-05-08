@@ -9,7 +9,7 @@
             </video>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">"IF WESTERN ARMENIAN DIES, THE GENOCIDE IS COMPLETE."</h1>
+            <p class="hero-title">"IF WESTERN ARMENIAN DIES, THE GENOCIDE IS COMPLETE."</p>
             <div class="hero-slogan">
                 <span>RECALL</span>
                 <span>RECONNECT</span>
@@ -30,7 +30,7 @@
                 diverse social, artistic and cultural projects and events.
             </p>
             <div class="intro-button-container">
-                <a href="#" class="intro-button">Our Story</a>
+                <a href="#" class="intro-button"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/our story button.png" alt="Compass background" class="img-intro"></a>
             </div>
         </div>
     </section>
@@ -40,11 +40,13 @@
             <div class="purpose-content">
                 <div class="purpose-text">
                     <p class="purpose-p">We're on a mission to bridge our
-                         past to our present, breathing new 
-                         life into our language and heritage, 
-                         and proving that together, we can 
-                         achieve the extraordinary!</p>
-                    <button class="purpose-button">Our Purpose</button>
+                        past to our present, breathing new
+                        life into our language and heritage,
+                        and proving that together, we can
+                        achieve the extraordinary!</p>
+                </div>
+                <div class="purpose-button">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/our purpose button.png" alt="Our Purpose" class="img-purpose"></a>
                 </div>
             </div>
         </div>
@@ -55,73 +57,39 @@
         </div>
     </section>
 
-    <section class="what-were-up-to">
-        <h2 class="wwut-section-title">WHAT WE'RE UP TO</h2>
-        <div class="wwut-button-container">
-            <button class="wwut-image-button">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/projects.jpg" alt="Projects">
-                <span>PROJECTS</span>
-            </button>
-            <div class="wwut-image-button">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/events.jpg" alt="Events">
-                <span>EVENTS</span>
-            </div>
-            <div class="wwut-image-button">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/community.jpg" alt="Community">
-                <span>COMMUNITY</span>
+    <section class="projects-section">
+        <div class="what-were-up-to">
+            <div class="background-container">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/blog background.png" alt="Connect background" class="wwut-background">
+                <div class="content-overlay">
+                    <h2 class="wwut-section-title">WHAT WE'RE UP TO</h2>
+                    <div class="wwut-button-container">
+                        <button class="wwut-image-button">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/projects.png" alt="Projects">
+                        </button>
+                        <div class="wwut-image-button">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/events.png" alt="Events">
+                        </div>
+                        <div class="wwut-image-button">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/community.png" alt="Community">
+                        </div>
+                    </div>
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/take a look button.png" alt="Take a look"></a>
+                </div>
             </div>
         </div>
     </section>
-<!-- 
-    <section class="follow-along">
-        <div class="container">
-            <h2>FOLLOW ALONG</h2>
-
-            <div class="handle">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <a href="https://www.instagram.com/hnarti_official/">Hnarti_Official - Հնարդի</a>
-            </div>
-
-            <div class="instagram-grid">
-                
-                <a href="https://www.instagram.com/p/POST_ID_1/" target="_blank" rel="noopener noreferrer">
-                    <img src="/api/placeholder/220/220" alt="Instagram post 1" />
-                </a>
-
-                
-                <a href="https://www.instagram.com/p/POST_ID_2/" target="_blank" rel="noopener noreferrer">
-                    <img src="/api/placeholder/220/220" alt="Instagram post 2" />
-                </a>
-
-               
-                <a href="https://www.instagram.com/p/POST_ID_3/" target="_blank" rel="noopener noreferrer">
-                    <img src="/api/placeholder/220/220" alt="Instagram post 3" />
-                </a>
-
-               
-                <a href="https://www.instagram.com/p/POST_ID_4/" target="_blank" rel="noopener noreferrer">
-                    <img src="/api/placeholder/220/220" alt="Instagram post 4" />
-                </a>
-
-                
-                <a href="https://www.instagram.com/p/POST_ID_5/" target="_blank" rel="noopener noreferrer">
-                    <img src="/api/placeholder/220/220" alt="Instagram post 5" />
-                </a>
-            </div>
-        </div>
-    </section> -->
 
 
     <section class="lets-connect">
         <div class="connect-container">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pinkRectangle.png" alt="Connect background" class="connect-background">
             <div class="connect-content">
-                <h2 class="connect-title">LET'S CONNECT</h2>
+                <p class="connect-title">LET'S CONNECT</p>
                 <p class="connect-text">
-                    If you like what we do and are interested in collaborating, do not hesitate to get in touch.
-                    We are also seeking long-term sponsors. If our mission aligns with your support criteria,
-                    we look forward to hearing from you.
+                    If you like what we do and are interested in collaborating, do not hesitate
+                    to get in touch. We are also seeking long-term sponsors. If our mission
+                    aligns with your support criteria, we look forward to hearing from you.
                 </p>
                 <a href="#" class="connect-button">Message Us</a>
             </div>

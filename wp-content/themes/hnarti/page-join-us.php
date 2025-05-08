@@ -2,8 +2,8 @@
 <!-- HTML Structure -->
 <div class="hnarti-container">
     <div class="hnarti-header">
-        <h1>Join the Hnarti Family!</h1>
-        <p>Be part of a passionate community of Hnaramids 
+        <p class="hnarti-header-h1">Join the Hnarti Family!</p>
+        <p class="hnarti-header-p">Be part of a passionate community of Hnaramids 
             dedicated to preserving and reviving our
             language and culture.</p>
     </div>
@@ -50,7 +50,7 @@
         <div class="connect-container">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/join-us/asset 11.png" alt="Connect background" class="connect-background">
             <div class="connect-content">
-                <h2 class="connect-title">LET'S CONNECT</h2>
+                <p class="connect-title">LET'S CONNECT</p>
                 <p class="connect-text">
                     If you like what we do and are interested in collaborating, do not hesitate to get in touch.
                     We are also seeking long-term sponsors. If our mission aligns with your support criteria,

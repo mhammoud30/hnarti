@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: local('Tw Cen MT'),
+    url('../../fonts/TwCenMTStdBold.woff2') format('woff2'),
+    url('../../fonts/TwCenMTStdBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tw Cen MT'!important;
+}
+
+
+
 /* Contact Section Styles */
 .contact-section {
     background-color: #FFF4E3; /* Cream/beige background color */
@@ -12,11 +31,10 @@
     text-align: center;
 }
 
-.contact-section h1 {
+.container-title {
     color: #730E3E;
     font-size: 50px;
     margin-bottom: 30px;
-    font-weight: 700;
     font-family: 'Tw Cen MT', sans-serif;
 
 }

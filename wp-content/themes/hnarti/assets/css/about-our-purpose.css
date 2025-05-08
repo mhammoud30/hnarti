@@ -1,33 +1,21 @@
 @font-face {
     font-family: 'Tw Cen MT';
-    src: url('twcenmt.ttf') format('truetype');
+    src: local('Tw Cen MT'),
+        url('../../fonts/TwCenMTStdBold.woff2') format('woff2'),
+        url('../../fonts/TwCenMTStdBold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Tw Cen MT';
-    src: url('twcenmt-bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Tw Cen MT';
-    src: url('twcenmt-bolditalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-/* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Tw Cen MT' !important;
 }
 
 body {
-    font-family: 'Tw Cen MT', Arial, sans-serif;
     background-color: #FFF4E3;
 }
 
@@ -43,20 +31,18 @@ body {
 }
 
 .goal-container {
-    width: 100%;
-
-    margin: 0 auto;
+    margin-right: -5%;
     padding: 20px;
 }
 
 @media (min-width: 992px) {
     .goal-container {
-        width: 65%;
-        margin-left: 7%;
+        width: 50%;
+        margin-left: 10%;
     }
 
-    .navigator-container {
-        width: 35%;
+    .compass-container {
+        width: 50%;
     }
 }
 
@@ -68,7 +54,6 @@ body {
 
 .goal-text .goal-p {
     font-size: 35px;
-    font-weight: bold;
     line-height: 1.5;
     color: #730E3E;
     text-align: left;
@@ -179,19 +164,17 @@ body {
 }
 
 /* --- TYPOGRAPHY ---------------------------------------------------------- */
-.vision-content h2 {
+.vision-content-h2 {
     font-size: 40px;
-    font-weight: 700;
     color: #7a0039;
     /* rich maroon ‑ tweak if brand differs */
     margin-bottom: 50px;
 }
 
-.vision-content p {
+.vision-content-p {
     max-width: 7000px;
     margin: 40px auto 0;
     line-height: 1.55;
-    font-weight: bold;
     font-size: 25px;
     color: #7a0039;
 }
@@ -228,70 +211,54 @@ body {
     padding-bottom: 10px;
 }
 
-.our-mission h2 {
+.our-mission-h2 {
     color: #7a0039;
     /* maroon brand colour */
     font-size: 45px;
-    font-weight: 700;
     margin-bottom: 90px;
 }
 
 /* ------- GRID LAYOUT ---------------------------------------------------- */
 .mission-grid {
+    --gap: 1.5rem;
+    /* easy spacing tweak */
     display: grid;
+    gap: var(--gap);
     grid-template-columns: repeat(2, 1fr);
-    /* always two cards per row   */
-    gap: 30px;
-    /* row / column gaps          */
-    /* row / column gaps */
+    /* 2 cols desktop */
     max-width: 1200px;
-    margin: 0 auto;
+    /* center + constrain overall width */
+    margin-inline: auto;
+    padding-inline: 1rem;
 }
 
-/* ------- INDIVIDUAL CARD ----------------------------------------------- */
+/* Mobile: single column */
+@media (max-width: 600px) {
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ======= 2. Card ======= */
 .mission-card {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    /* inner breathing room */
-    text-align: left;
-    /* keeps line breaks natural */
+    /* needed for text overlay */
+    overflow: hidden;
+    border-radius: 12px;
+    /* perfect square; remove if you want natural height */
 }
 
-/* decorative PNG (frame + number badge + drop‑shadow) */
-.mission-frame {
-    position: absolute;
-    inset: 0;
-    /* stretch to edges */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    z-index: 1;
-    /* sits behind text */
-    pointer-events: none;
+/* ======= 3. Image ======= */
+.mission-image {
+    width: 90%;
+    height: auto;
+    /* fill card, cropping if necessary */
+    display: block;
+    /* removes baseline gap */
+    transition: transform .4s ease;
+    /* simple hover zoom */
 }
 
-.mission-card p {
-    position: relative;
-    z-index: 2;
-    line-height: 1.45;
-    font-size: 30px;
-    font-weight: 600;
-    margin: 0;
-    white-space: pre-line;
-}
-
-/* colour variants for text ---------------------------------------------- */
-.mission-card.blue p {
-    color: #3183e6;
-}
-
-/* adjust if your blue differs */
-.mission-card.pink p {
-    color: #e90d7a;
-}
 
 /* ------- RESPONSIVE TOUCH‑UP ------------------------------------------- */
 @media (max-width: 640px) {
@@ -323,11 +290,10 @@ body {
     text-align: center;
 }
 
-.our-values h2 {
+.our-values-h2 {
     color: #7a0039;
     /* brand maroon                   */
     font-size: 40px;
-    font-weight: bold;
     margin-bottom: 50px;
 }
 
@@ -359,7 +325,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 40px 90px;
+    padding: 120px 20px 90px;
     /* enough space for icon + copy      */
     text-align: center;
 }
@@ -389,19 +355,18 @@ body {
 }
 
 /* headline & copy */
-.value-card h3 {
+.value-card-h3 {
     position: relative;
     z-index: 2;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 27px;
     color: #7a0039;
     margin-bottom: 24px;
 }
 
-.value-card p {
+.value-card-p {
     position: relative;
     z-index: 2;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.55;
     color: #111;
     margin: 0;
@@ -424,26 +389,29 @@ body {
 
 /* ---------- SECTION BACKDROP ------------------------------------------- */
 .envelope-cta {
-	background: #fff4e3;                /* same light beige as other bands */
-	padding: 140px 20px 180px;
-	text-align: center;
+    background: #fff4e3;
+    /* same light beige as other bands */
+    padding: 140px 20px 180px;
+    text-align: center;
 }
 
 /* ---------- ENVELOPE LAYOUT ------------------------------------------- */
 .envelope-stack {
     /* master width: change once and everything scales together          */
-    width: clamp(320px, 65vw, 640px);     /* 640px ≈ 31% of 2048px asset */
-    aspect-ratio: 2048 / 1646;            /* keeps the front flap crisp  */
+    width: clamp(320px, 1200px, 800px);
+    /* 640px ≈ 31% of 2048px asset */
+    aspect-ratio: 2048 / 1646;
+    /* keeps the front flap crisp  */
     position: relative;
     margin: 0 auto;
 }
 
 /* FRONT flap – reference layer (100 %) */
 .envelope-front {
-    width: 112%;
+    width: 114%;
     height: auto;
     position: absolute;
-    transform: translate(0%, 32%); 
+    transform: translate(0%, 32%);
     inset: 0;
     z-index: 3;
     pointer-events: none;
@@ -456,7 +424,8 @@ body {
     height: auto;
     position: absolute;
     inset: 0;
-    margin: auto;                         /* centre within the stack     */
+    margin: auto;
+    /* centre within the stack     */
     z-index: 1;
     pointer-events: none;
     object-fit: contain;
@@ -468,8 +437,10 @@ body {
     height: auto;
     position: absolute;
     left: 50%;
-    top: 37%;                             /* where the letter mouth is   */
-    transform: translate(-50%, 0%);      /* 60 % down = hidden inside   */
+    top: 37%;
+    /* where the letter mouth is   */
+    transform: translate(-50%, 0%);
+    /* 60 % down = hidden inside   */
     transition: transform 1.4s ease-out;
     z-index: 2;
     object-fit: contain;
@@ -484,21 +455,23 @@ body {
 .btn-join-mission {
     position: absolute;
     left: 50%;
-    bottom: 10%;                          /* adjust until it looks right */
+    bottom: 10%;
+    /* adjust until it looks right */
     transform: translateX(-50%);
     z-index: 4;
     padding: 14px 36px;
     font-weight: 600;
     border: 2px solid #e0177f;
     border-radius: 6px;
-    background: #fff;
+    background: #FFF4E3;
     color: #7a0039;
     text-decoration: none;
-    transition: background .25s;
 }
-.btn-join-mission:hover { background:#fbe8f1; }
 
 /* narrow‑screen tweak */
-@media (max-width:480px){
-    .btn-join-mission{ padding:12px 28px; font-size:.95rem; }
+@media (max-width:480px) {
+    .btn-join-mission {
+        padding: 12px 28px;
+        font-size: .95rem;
+    }
 }

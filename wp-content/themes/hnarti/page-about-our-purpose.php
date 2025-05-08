@@ -35,7 +35,7 @@
 
         <!-- Content that sits on top of the frame -->
         <div class="vision-content">
-            <h2>Our Vision</h2>
+            <p class="vision-content-h2">Our Vision</p>
 
             <img
                 src="<?php echo get_template_directory_uri(); ?>/assets/images/our-purpose/Asset 2.png"
@@ -44,7 +44,7 @@
                 loading="lazy"
                 decoding="async" />
 
-            <p>
+            <p class="vision-content-p">
                 Forging a bridge that connects our past to our present,<br />
                 on a journey to rediscover our heritage and history.
             </p>
@@ -54,67 +54,47 @@
 
 <!--  Our Mission  -->
 <section class="our-mission">
-    <h2>Our Mission</h2>
+    <p class="our-mission-h2">Our Mission</p>
 
     <div class="mission-grid">
         <!-- Card #1 – blue -------------------------------------------- -->
-        <div class="mission-card blue">
+        <div class="mission-card">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/our-purpose/Asset 10.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/our-purpose/1.png"
                 alt=""
-                class="mission-frame"
+                class="mission-image"
                 loading="lazy"
                 decoding="async" />
-            <p>
-                Revitalizing the Western
-                Armenian language through
-                innovative approaches
-            </p>
         </div>
 
         <!-- Card #2 – pink -------------------------------------------- -->
-        <div class="mission-card pink">
+        <div class="mission-card">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/our-purpose/Asset 11.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/our-purpose/2.png"
                 alt=""
-                class="mission-frame"
+                class="mission-image"
                 loading="lazy"
                 decoding="async" />
-            <p>
-                Rekindling our time‑honored
-                traditions by reintroducing them
-                into our contemporary lifestyle
-            </p>
         </div>
 
         <!-- Card #3 – pink -------------------------------------------- -->
-        <div class="mission-card pink">
+        <div class="mission-card">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/our-purpose/Asset 12.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/our-purpose/3.png"
                 alt=""
-                class="mission-frame"
+                class="mission-image"
                 loading="lazy"
                 decoding="async" />
-            <p>
-                Fostering a new generation of
-                artists and innovators through
-                a multidisciplinary platform
-            </p>
         </div>
 
         <!-- Card #4 – blue -------------------------------------------- -->
-        <div class="mission-card blue">
+        <div class="mission-card">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/our-purpose/Asset 13.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/our-purpose/4.png"
                 alt=""
-                class="mission-frame"
+                class="mission-image"
                 loading="lazy"
                 decoding="async" />
-            <p>
-                Forming a global community of
-                Hnaramids, connected through
-                our people’s collective narrative
-            </p>
         </div>
     </div>
 </section>
@@ -122,7 +102,7 @@
 
 <!--  Our Values  -->
 <section class="our-values">
-    <h2>Our Values</h2>
+    <p class="our-values-h2" >Our Values</p>
 
     <div class="values-grid">
         <!-- Card 1 ----------------------------------------------------- -->
@@ -139,8 +119,8 @@
                 class="value-icon"
                 loading="lazy"
                 decoding="async" />
-            <h3>Stronger United</h3>
-            <p>
+            <p class="value-card-h3">Stronger United</p>
+            <p class="value-card-p">
                 Team members working
                 with a shared purpose
                 and an unwavering spirit,
@@ -163,8 +143,8 @@
                 class="value-icon"
                 loading="lazy"
                 decoding="async" />
-            <h3>Equivalent Exchange</h3>
-            <p>
+            <p class="value-card-h3">Equivalent Exchange</p>
+            <p class="value-card-p">
                 Members who acquire
                 knowledge and skills within
                 Hnarti carry the responsibility of passing them on to newer
@@ -187,8 +167,8 @@
                 class="value-icon"
                 loading="lazy"
                 decoding="async" />
-            <h3>Visionary Builders</h3>
-            <p>
+            <p class="value-card-h3">Visionary Builders</p>
+            <p class="value-card-p">
                 Driven by creativity and
                 dedication, each member is
                 encouraged to discover their
@@ -212,8 +192,8 @@
                 class="value-icon"
                 loading="lazy"
                 decoding="async" />
-            <h3>Sustainable Society</h3>
-            <p>
+            <p class="value-card-h3">Sustainable Society</p>
+            <p class="value-card-p">
                 Our choices shape ourselves,
                 our world, and our future.
                 We’re committed to creating

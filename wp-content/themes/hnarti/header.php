@@ -45,9 +45,9 @@
             );
             ?>
             <div class="header-actions">
-                <a href="#" class="search-toggle">
+                <!-- <a href="#" class="search-toggle">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-search-icon.png" alt="Search">
-                </a>
+                </a> -->
                 <div class="language-selector">
                     <select name="language" id="language-select">
                         <option value="en">EN</option>
