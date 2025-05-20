@@ -42,6 +42,14 @@ function hnarti_enqueue_assets()
     // Enqueue main stylesheet
     wp_enqueue_style('hnarti-style', get_template_directory_uri() . '/assets/css/main.css', array('hnarti-header-style'), '1.0.0');
 
+    wp_enqueue_style(
+        'hnarti-style-mobile',
+        get_template_directory_uri() . '/assets/css/mobile.css',
+        ['hnarti-style'],
+        '1.0.0',
+        '(max-width: 767px)'   // media attribute
+    );
+
     // Enqueue main JavaScript file
     wp_enqueue_script('hnarti-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0.0', true);
 
@@ -176,3 +184,6 @@ function load_custom_css_for_joinUs_page()
     }
 }
 add_action('wp_enqueue_scripts', 'load_custom_css_for_joinUs_page');
+
+
+

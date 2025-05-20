@@ -37,58 +37,30 @@
     z-index: 1;
     height: 100vh;
     padding-top: 15vh;
-
-    /* Adjust this value to move content up or down */
 }
 
-.hero-title {
-    color: #730E3E;
-    font-size: 35px;
-    line-height: 1.2;
-    margin-bottom: 37vh;
-    /* Increased space between title and slogan */
-    max-width: 100%;
-}
-
-.hero-slogan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 40px;
-    margin-bottom: 9vh;
-    margin-top: 3%;
-    /* Adjust space between slogan and button */
-}
-
-.hero-slogan span {
-    display: block;
-    color: #EC2083;
-    line-height: 1.2;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 8px 40px;
-    background-color: #FFF4E3;
-    color: #730E3E;
-    text-decoration: none;
-    border-radius: 10px;
-    border: 4px solid #730E3E;
-    font-size: 26px;
-    position: relative;
-}
-
-.cta-button::before {
-    content: '';
+.cta-button-container {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #730E3E;
-    z-index: -1;
-    border-radius: 10px;
-    transform: translate(10px, 10px);
+    bottom: 3vh;
+    right: 7.5vw;
+    /* Space between button and bottom edge */
+    width: 100%;
+    text-align: center;
+}
+
+.cta-button-container a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.cta-button-container a:hover {
+    transform: scale(1.05);
+}
+
+.img-video {
+    max-width: 250px;
+    /* Adjust based on your button size */
+    height: auto;
 }
 
 @media(min-width: 550px) {
@@ -239,7 +211,7 @@
 
 .purpose-content {
     position: relative;
-    padding: 40px 30px 60px;
+    padding: 40px 30px 70px;
     background-image: url("../images/landing/note\ background.png");
     background-size: cover;
     background-position: center;
@@ -251,7 +223,7 @@
     position: relative;
     transform: rotate(-4deg);
     z-index: 2;
-    font-weight: bold   ;
+    font-weight: bold;
 }
 
 .purpose-p {
@@ -417,7 +389,7 @@
 
 .what-were-up-to a {
     display: inline-block;
-    
+
     transition: transform 0.3s ease;
 }
 
@@ -448,12 +420,12 @@
     .wwut-image-button span {
         font-size: 24px;
     }
-    
+
     .content-overlay {
         position: relative;
         padding: 20px;
     }
-    
+
     .wwut-background {
         display: none;
     }
@@ -464,8 +436,9 @@
 
 /* Let's Connect Section Styles */
 .lets-connect {
+    
     background-color: #FFF4E3;
-    padding: 60px 0;
+    padding: 160px 0;
     position: relative;
     overflow: hidden;
 }
@@ -577,9 +550,146 @@
 }
 
 
-/* Footer Styles */
+/* =========================
+   Mobile Footer Styles
+   ========================= */
+.mobile-site-footer {
+    position: relative;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .mobile-site-footer {
+        display: none;
+    }
+}
+
+.mobile-footer-top {
+    background-color: #F7DFB7;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.mobile-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-footer-logo {
+    margin-bottom: 20px;
+}
+
+.mobile-footer-logo img {
+    height: 100px;
+    width: auto;
+}
+
+.mobile-footer-content {
+    width: 100%;
+}
+
+.mobile-footer-title {
+    font-size: 24px;
+    color: #730E3E;
+    margin-bottom: 8px;
+}
+
+.mobile-footer-subtitle {
+    font-size: 14px;
+    color: #6b2a68;
+    margin-bottom: 20px;
+}
+
+.mobile-footer-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.mobile-footer-form input[type="text"],
+.mobile-footer-form input[type="email"] {
+    padding: 12px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #FFF4E3;
+}
+
+.mobile-footer-form button {
+    background-color: #4d90db;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.mobile-footer-emblem {
+    margin-top: 25px;
+}
+
+.mobile-footer-emblem img {
+    height: 80px;
+    width: auto;
+}
+
+.mobile-footer-bottom {
+    background-color: #F7DFB7;
+    padding: 25px 20px;
+}
+
+.mobile-footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile-footer-copyright p {
+    margin: 0;
+    color: #6b2a68;
+    font-size: 14px;
+    text-align: center;
+}
+
+.mobile-back-to-top {
+    text-align: center;
+}
+
+.mobile-back-to-top a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.mobile-back-to-top img {
+    width: 40px;
+    height: 40px;
+}
+
+/* =========================
+   Original Desktop Footer Styles
+   ========================= */
 .site-footer {
     position: relative;
+    display: none;
+    /* Hidden on mobile by default */
+}
+
+@media (min-width: 768px) {
+    .site-footer {
+        display: block;
+        /* Show on tablet and larger */
+    }
 }
 
 .footer-top {
@@ -716,7 +826,9 @@
     background-color: #730E3E;
 }
 
-@media (max-width: 1024px) {
+/* Responsive Styles */
+
+@media (max-width: 1024px) and (min-width: 768px) {
     .footer-emblem {
         right: 2%;
     }
@@ -726,65 +838,7 @@
     }
 }
 
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-logo {
-        margin-bottom: 20px;
-    }
-
-    .footer-content {
-        margin-left: 0;
-    }
-
-    .footer-form {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-form input[type="text"],
-    .footer-form input[type="email"] {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .footer-emblem {
-        position: static;
-        transform: none;
-        margin: 20px auto 0;
-        text-align: center;
-    }
-
-    .footer-emblem img {
-        height: 100px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .footer-policies {
-        justify-content: center;
-    }
-
-    .back-to-top {
-        position: static;
-        transform: none;
-        margin: 20px auto 0;
-        text-align: center;
-    }
-
-    .back-to-top a {
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 120px) {
+@media (min-width: 1200px) {
     .footer-emblem {
         top: 45%;
     }

@@ -4,19 +4,13 @@
     <section class="hero">
         <div class="hero-video-container">
             <video autoplay muted loop id="hero-video">
-                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/hero-video.mp4" type="video/mp4">
+                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/Website_Hero_1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="hero-content">
-            <p class="hero-title">"IF WESTERN ARMENIAN DIES, THE GENOCIDE IS COMPLETE."</p>
-            <div class="hero-slogan">
-                <span>RECALL</span>
-                <span>RECONNECT</span>
-                <span>REVIVE</span>
-            </div>
             <div class="cta-button-container">
-                <a href="#" class="cta-button">Join the Mission</a>
+                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/join the mission button.png" alt="Compass background" class="img-video"></a>
             </div>
         </div>
     </section>
