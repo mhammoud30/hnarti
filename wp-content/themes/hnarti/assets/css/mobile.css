@@ -1,12 +1,13 @@
 /* ========== HERO ========== */
 .hero {
-    height: 54vh;
-    padding-bottom: 10px;
+    height: 25vh;
+    
 }
 
 /* replace the video       */
 .hero-content {
     padding-top: 25vh;
+    height: 1vh;
 }
 
 #hero-video {
@@ -17,13 +18,13 @@
 
 /* centre CTA a bit lower  */
 .img-video {
-    max-width: 180px;
+    max-width: 120px;
 }
 
 .cta-button-container {
     position: absolute;
-    bottom: 25vh;
-    right: 10vw;
+    bottom: -2vh;
+    right: 14vw;
 }
 
 /* smaller join-button     */
@@ -37,8 +38,8 @@
     white-space: normal;
 }
 
-.intro-button img {
-    width: 140px;
+.intro-button .img-intro {
+    width: 120px;
 }
 
 /* ========== PURPOSE / COMPASS ========== */
@@ -50,22 +51,46 @@
 
 .purpose-container {
     z-index: 2;
+    padding: 20px;
+}
+
+.purpose-content {
+    padding: 80px 0px 40px;
+}
+
+.purpose-text {
+    margin-top: -30px;
+}
+
+.purpose-p{
+    font-size: 14px;
+}
+
+.img-purpose {
+    width: 100px;
 }
 
 .compass-container {
-    width: 70vw;
+    width: 100%;
     /* 70 % of viewport width   */
-    margin: 32px auto 0;
-    /* space below the note     */
-    padding-bottom: 70vw;
     /* keep it a perfect square */
     z-index: 1;
 }
 
-
+.compass-center {
+    position: absolute;
+    left: calc(50% + 10px);
+    top: calc(50% + 17px);
+    transform: translate(-50%, -50%);
+}
 /* dial back the hand length & thickness if needed */
 .compass-hand {
     height: 55%;
+    transform: translate(-50%, -50%) rotate(202.1deg);
+    position: absolute;
+    transform-origin: center center;
+    left: calc(50% + 10px);
+    top: calc(50% + 21px);
 }
 
 
